@@ -1,0 +1,466 @@
+@media (max-width: 1000px){
+    *{
+      font-family: 'Arial';
+    }
+
+    #alert{
+      display: none;
+    }
+
+    #pc{
+        display: none;
+    }
+    
+    body{
+      margin: 0;
+      background-color: #057E8D;
+      overflow-x: hidden;
+    }
+    
+    .background{
+        overflow: hidden;
+    }
+
+    .background img{
+      margin-top: -14vh;
+      margin-left: 63%;
+      width: 250px;
+    }
+    
+    .container{
+      position: absolute;
+      width: 100%;
+      border-radius: 10px;
+      background-color: #f0f0f0;
+      margin-top: -90px;
+      height: auto;
+    }
+
+    .container.semua .highlight, .container.semua .data{
+        height: 0vh;
+        transition: 0.7s ease;
+    }
+
+    .container.semua #isi{
+        display: none;
+    }
+
+    #rumah-isi ,#semua-isi, #about-isi{display: none;}
+
+    .container.rumah #rumah-isi{display: flex;}
+    .container.rumah #rumah-out{display: none;}
+    .container.semua #semua-isi{display: flex;}
+    .container.semua #semua-out{display: none;}
+    .container.tentang #about-isi{display: flex;}
+    .container.tentang #about-out{display: none;}
+
+    .container.tentang .highlight, .container.tentang .data, 
+    .container.tentang .tab, .container.tentang .article, 
+    .container.tentang .article .gambar, .container.tentang .article .isi,
+    .container.tentang .slides .items{
+        opacity: 0;
+        height: 0vh;
+        visibility: hidden;
+        transition: 0.8s;
+    }
+
+    .container.tentang #about-out, .container.tentang #mode-b{
+        display: none;
+    }
+    
+    .header{
+      position: sticky;
+      top: 0;
+      display: flex;
+      z-index: 2;
+      align-items: center;
+      background-color: #f0f0f0;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      transition: 0.3s ease;
+      height: 10vh;
+    }
+    
+    .scrolled{
+      background: #cdf1f7;
+      border-top-right-radius: 0px;
+      border-top-left-radius: 0px;
+    }
+    
+    h2{
+      font-size: 17px;
+      font-weight: bold;
+      margin: 0;
+    }
+    
+    
+    
+    .header .judul{
+      display: flex;
+      align-items: center;
+      height: 100%;
+      margin-top: 5px;
+      align-items: center;
+    }
+    
+    
+    .header img{
+      width: 55px;
+      margin-left: 10px;
+    
+    }
+    
+    .isian{
+      height: 100vh;
+    }
+    
+    .isian .data{
+      display: flex;
+      justify-content: center;
+      height: 10vh;
+      transition: 0.5s ease;
+      border-radius: 10px;
+      background-color: #fff;
+    }
+    
+    .isian .data .isi{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 95%;
+      height: 100%;
+    }
+    
+    .isian .data .opsi{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .opsi .judul{
+      display: flex;
+      justify-content: center;
+      font-size: 15px;
+      font-weight: bold;
+    }
+    
+    .isian .highlight{
+      height: 25vh;
+      margin-top: 5px;
+      border-radius: 10px;
+      transition: 0.5s ease;
+      background-color: #fff;
+    }
+    
+    #highlight{
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      height: 5vh;
+    }
+    
+    .highlight{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: 1vh;
+    }
+    
+    .highlight .title{
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      height: 3vh;
+    }
+    
+    h2{
+      margin: 0;
+    }
+    
+    .highlight .slides{
+      height: 17vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .highlight .tombol{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 5%;
+    }
+    
+    .prev,
+    .next{
+      cursor: pointer;
+      height: 10px;
+      color: #bbb;
+      transition: 0.2s ease;
+    }
+    
+    .prev:hover,
+    .next:hover{
+      transform: scale(1.2);
+      color: rgba(0,0,0,0.8);
+    }
+    
+    .highlight .items{
+      width: 65%;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    
+    .highlight .items img{
+      width: 100%;
+      height: 100%;
+    }
+    
+    .highlight .button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 7px;
+      height: 10px;
+    }
+    
+    .highlight .button .lines{
+      cursor: pointer;
+      margin: 0 5px 0 5px;
+      border-radius: 10px;
+      width: 20px;
+      height: 2px;
+      transition: 0.5s ease;
+      background-color: #bbb;
+    }
+    
+    .button .lines:hover{
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+    .highlight .button .lines.active{
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+    
+    .isian .tab{
+      display: flex;
+      height: 4vh;
+      overflow: hidden;
+      margin-top: 5px;
+      background-color: #ffffff;
+    }
+    
+    .isian .tab .filter{
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      width: 22%;
+      overflow: hidden;
+      margin-left: 3px;
+      border-radius: 50px;
+      background-color: #fff;
+    }
+    
+    .tab .filter select{
+      border: none;
+      font-size: 15px;
+      background-color: transparent;
+    }
+    
+    .tab .filter select:focus{
+      border: none;
+      outline: none;
+      background-color: transparent;
+    }
+    
+    .tab .menu{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 80%;
+      margin-left: 3px;
+    }
+    
+    .tab .menu .opsi{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+      width: 30%;
+      height: 100%;
+    }
+    
+    .isian .article{
+      height: 17vh;
+      margin-top: 5px;
+      transition: 0.7s ease;
+      border-radius: 12px;
+    }
+    
+    .article .isi{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+      height: 17vh;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    
+    .article .isi .gambar{
+      display: flex;
+      align-items: center;
+      width: 20%;
+      height: 100%;
+    }
+    
+    .article .isi .gambar img{
+      width: 300px;
+      filter: blur(2px);
+      height: 100%;
+    }
+    
+    .article .isi .deskripsi{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      border-radius: 10px;
+      background-color: #ffffff;
+    }
+    
+    .article .isi .deskripsi .title{
+      margin-left: 10px;
+      display: flex;
+      height: 4vh;
+      align-items: flex-end;
+    }
+    
+    .article .isi .deskripsi .desk{
+      margin-left: 10px;
+      height: auto;
+      width: 95%;
+    }
+    
+    .article .isi .deskripsi .desk p{
+      display: flex;
+      align-items: flex-start;
+      margin: 0px;
+      width: 90%;
+      font-size: 9px;
+    }
+    
+    .article .isi .deskripsi .tombol{
+        margin-left: 10px;
+        margin-top: 10px;
+        height: 3.5vh;
+    }
+    
+    .article .isi .deskripsi .tombol .button{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #0894a7;
+      height: 90%;
+      width: 90px;
+      border-radius: 50px;
+      box-shadow: 1px 2px rgba(0,0,0,0.2);
+    }
+    
+    .article .isi .deskripsi .tombol a{
+      text-decoration: none;
+      font-size: 10px;
+      color: #fff;
+    }
+    
+    .tab-menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .tab-item {
+      display: inline-block;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    
+    .tab-item.active {
+      font-weight: bold;
+    }
+    
+    .tab-content .tab-pane {
+      display: none;
+    }
+    
+    .tab-content .tab-pane.active {
+      display: block;
+    }
+
+    .developer{
+        display: flex;
+        height: 20vh;
+        margin-top: 5px;
+        border-radius: 10px;
+        transition: 0.5s ease;
+        background-color: #ffffff;
+    }
+
+    .developer .foto{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 30%;
+    }
+
+    .developer .foto .gambar{
+        width: 92%;
+        height: 75%;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+
+    .developer .foto .gambar img{
+        width: 100%;
+    }
+    
+    .footer{
+      position: sticky;
+      bottom: 0;
+      display: flex;
+      z-index: 1;
+      justify-content: center;
+      height: 8vh;
+      width: 99.9%;
+      background-color: #ffffff;
+      transform: translateZ(0);
+    }
+    
+    .footer .isi{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+    }
+    
+    .footer .isi .opsi{
+      width: 15%;
+    }
+    
+    .footer .isi .title{
+      display: flex;
+      font-size: 12px;
+      justify-content: center;
+    }
+
+    #about-isi{
+        display: none;
+    }
+    
+  }

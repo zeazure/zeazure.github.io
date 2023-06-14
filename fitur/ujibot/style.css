@@ -1,0 +1,161 @@
+/*Style CSS untuk elemen chat dan input*/ 
+   body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: arial;
+    height: 97vh;
+    background-image: url(/asset/wallpaper.jpg);
+    background-size: cover;
+   }
+
+   @media (max-width: 800px){
+    .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 90%;
+    border: rgba(00, 00, 00, 0.3) 1px ridge;
+    border-radius: 10px;
+    background-color: rgba(00, 00, 00, 0.3);
+   }
+
+   .isian{
+    height: 75vh;
+    width: 95%;
+   }
+ 
+   #chat {
+     height: 95%;
+     overflow-y: auto;
+   }
+ 
+   .chatbox {
+    color: #fff;
+    background-color: rgba(00, 00, 00, 0.3);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+   }
+
+   .chetbox {
+    color: #fff;
+    background-color: rgba(00, 00, 00, 0.3);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+ 
+   .chatbox p {
+    margin: 0;
+   }
+ 
+   .inputbox {
+     height: 5%;
+     display: flex;
+     font-size: 12px;
+     color: #fff;
+   }
+ 
+   .inputbox input[type="text"] {
+     flex: 1;
+     padding: 10px;
+     border: none;
+     border-radius: 5px 0 0 5px;;
+     color: #fff;
+     background-color: rgba(00, 00, 00, 0.2);
+
+   }
+ 
+   .inputbox button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #378dfffe;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+   }
+
+   }
+
+   @media (min-width: 800px){
+    .container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+      width: 32%;
+      border: rgba(00, 00, 00, 0.3) 1px ridge;
+      border-radius: 10px;
+      background-color: rgba(00, 00, 00, 0.3);
+     }
+  
+     .isian{
+      height: 75vh;
+      width: 95%;
+     }
+   
+     #chat {
+       height: 90%;
+       overflow-y: auto;
+     }
+   
+     .chatbox {
+      color: #fff;
+      background-color: rgba(00, 00, 00, 0.3);
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+     }
+  
+     .chetbox {
+      color: #fff;
+      background-color: rgba(00, 00, 00, 0.3);
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+   
+     .chatbox p {
+      margin: 0;
+     }
+   
+     .inputbox {
+      height: 10%;
+      display: flex;
+      font-size: 20px;
+      color: #fff;
+     }
+   
+     .inputbox input[type="text"] {
+       flex: 1;
+       padding: 10px;
+       border: none;
+       border-radius: 5px 0 0 5px;;
+       color: #fff;
+       background-color: rgba(00, 00, 00, 0.2);
+  
+     }
+   
+     .inputbox button {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 10px;
+       border: none;
+       border-radius: 0 5px 5px 0;
+       background-color: #378dfffe;
+       color: white;
+       font-weight: bold;
+       cursor: pointer;
+     }
+   }
+
+::-webkit-scrollbar{
+  width: 0px;
+}

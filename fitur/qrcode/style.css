@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/asset/wallmorning.jpg);
+    background-size: cover;
+    display: flex;
+    font-family: 'arial';
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.content {
+    background-color: rgba(00, 00, 00, 0.3);
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+h1 {
+    color: #fff;
+}
+
+#qr-panel {
+    width: 300px;
+    height: 300px;
+    margin: 1rem 0;
+}
+
+#form-qr {
+    display: flex;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+input {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 10px 0px 0px 10px;
+    outline: none;
+    border: 1px solid #fff;
+    font-size: 15px;
+}
+
+button {
+    padding: 1rem 1rem;
+    margin: 1rem 0;
+    background-color: #54bb8c;
+    color: #fff;
+    border-radius: 0px 10px 10px 0px;
+    font-weight: 600;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}

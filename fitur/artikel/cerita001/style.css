@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#body{
+    background: #a4a5ac;
+    background-repeat: 0;
+    background-size: cover;
+}
+
+body.screenshot .navbar .nav{
+    background-color: #000;
+}
+
+.container{
+    overflow-y: scroll;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    transition: 0.5s ease;
+    justify-content: space-between;
+    background: #a4a5ac;
+    background-repeat: 0;
+    background-size: cover;
+}
+
+#body.color .container{
+    transition: 0.5s ease;
+    background-image: url(/asset/wallpaper.jpg);
+}
+
+.navbar{
+    align-items: center;
+    height: 70%;
+    width: 15%;
+}
+
+.navbar .nav{
+    position: fixed;
+    background-color: #fff;
+    height: 70%;
+    width: 1%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: 0.5s ease;
+    overflow: hidden;
+    box-shadow: 5px 7px rgba(00, 00, 00, 0.2);
+}
+
+.nav:hover{
+    width: 12%;
+}
+
+#body.color .nav, #body.color .form{
+    /*background-color: #465557;*/
+    background: #a4a5ac;
+}
+
+
+@media (max-width: 1000px){
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar{
+    width: 0%;
+    display: none;
+}
+
+.form{
+    margin: 100vh 0 0 0;
+    height: 220vh;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    border: #333646 1px solid;
+    box-shadow: 5px 7px rgba(00, 00, 00, 0.2);
+}
+
+.ads{
+    display: none;
+}
+
+}
+
+.nav .isian{
+    display: none;
+    transition: 0.5s ease-out 1s;
+    height: 100%;
+}
+
+
+.nav:hover .isian{
+    display: contents;
+    height: 100%;
+}
+
+.atas{
+    height: 35%;
+}
+
+.nav .isian .atas .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    align-items: flex-end;
+}
+
+.nav .isian .atas .dot{
+    background-color: #3dffbe;
+    border-radius: 50%;
+    width: 50%;
+    height: 65%;
+}
+
+.nav .isian .atas .logo img{
+    width: 80%;
+    margin-top: -7px;
+    margin-left: 20px;
+}
+
+.nav .isian .atas .title{
+    display: grid;
+    font-weight: bold;
+    justify-content: center;
+    height: 30%;
+    width: 100%;
+    font-size: 17px;
+}
+
+.nav .isian .atas .title p{
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+}
+
+.nav .bawah{
+    display: flexbox;
+    height: 55%;
+}
+
+.nav .bawah .daftar{
+    display: flexbox;
+    align-items: flex-start;
+    width: 100%;
+    margin: 3px 0 10px 0;
+    transition: 0.5s ease;
+    border: transparent 1px solid;
+}
+
+
+.nav .bawah .daftar #right{display: flex;}
+.nav .bawah .daftar:hover #right{display: none;}
+.nav .bawah .daftar #down{display: none;}
+.nav .bawah .daftar:hover #down{display: flex;}
+#body.color #sun{display: none;}
+#body.color #moon{display: flex;}
+#body #sun{display: flex;}
+#body #moon{display: none;}
+
+.nav .bawah .box{
+    display: grid;
+    justify-content: space-between;
+    height: 13.5%;
+    margin-left: 5px;
+    border: transparent 1px solid;
+}
+
+.title-D{
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.tombol-D{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .bawah .halaman{
+    height: 12%;
+    width: 100%;
+    transition: 0.5s ease;
+}
+
+.nav .bawah .halaman:hover{
+    height: 70%;
+}
+
+.nav .bawah .boxname{
+    display: flex;
+    transition: 0.5s ease 2s;
+    margin-left: 9px;
+    justify-content: space-between;
+}
+
+.boxname .tipe{
+    width: 40%;
+    display: grid;
+    font-weight: 500;
+    justify-content: space-between;
+}
+
+.boxname .isi{
+    width: 60%;
+    display: grid;
+}
+
+.boxname a{
+    width: 100%;
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+}
+
+
+#body.color .boxname a, #body.color .title, #body.color .title-D, #body.color .endtitle{
+    color: #fff;
+}
+
+@media (min-width: 1000px){
+.form{
+    margin: 145vh 0 15vh 0;
+    height: 200vh;
+    width: 1000%;
+    background-color: #fff;
+    border-radius: 15px;
+    transition: 0.5s ease;
+    overflow: hidden;
+    box-shadow: 5px 7px rgba(00, 00, 00, 0.2);
+}
+}
+
+.nav .tombol{
+    display: grid;
+    align-items: center;
+    height: 80px;
+}
+
+.nav .daftar:hover .tombol{
+    display: grid;
+}
+
+.nav .tombol .up, .nav .tombol .down{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.nav .tombol a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    box-shadow: 1px 3px rgba(00, 00, 00, 0.2);
+    border: transparent;
+    background-color: #fff;
+}
+
+#body.color .tombol a{
+    color: #fff;
+    background-color: grey;
+}
+
+.endtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    height: 10%;
+}
+
+.form .gambar{
+    background-image: url(/asset/anime.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+}
+
+.form .blur{
+    background: linear-gradient(transparent, #fff, #ffffff);
+    margin-top: -9%;
+    font-family: 'comic sans ms';
+    height: 25vh;
+    font-size: 30px;
+    transition: 0.7s ease;
+    padding: 0 25px 0 25px;
+}
+
+#body.color .form .blur{
+    transition: 0.7s ease;
+    background: linear-gradient(transparent, #c1c2c9, #a4a5ac);
+}
+
+.form .blur h2{
+    display: flex;
+    height: 50%;
+    width: 100%;
+    color: #fff;
+    align-items: flex-end;
+}
+
+.form .blur .line{
+    width: 12%;
+    border: #000 2px solid;
+}
+
+.form .blur p{
+    margin-top: 12px;
+    font-size: 0.65em;
+}
+
+.form .isian{
+    background: linear-gradient(#ffffff);
+    height: 50vh;
+    padding: 0 25px 0 25px;
+}
+
+.form .isian p{
+    font-size: 1.2em;
+}
+
+.form .isian .opening{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background: #fff;
+    border-radius: 10px;
+    border: #a4a5ac 1px solid;
+}
+
+.form .isian .opening p{
+    width: 97%;
+}
+
+.form .isian .bahasan1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7px;
+    border-radius: 10px;
+    background: #fff;
+    border: #a4a5ac 1px solid;
+}
+
+.bahasan1 .topik{
+    width: 97%;
+}
+
+.form .isian .subtema{
+    width: 97%;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+
+.form .isian .bahasan1 .pg{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.form .isian .bahasan1 .pg .logo1{
+    display: flex;
+    align-items: center;
+    height: 30vh;
+    width: 30%;
+}
+
+.form .isian .bahasan1 .pg .logo1 img{
+    width: 90%;
+    height: auto;
+}
+
+.form .isian .bahasan1 .pg p{
+    width: 70%;
+}
+
+@media (min-width: 1000px){
+.ads{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 70%;
+    width: 15%;
+}
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+.comingsoon{
+    color: grey;
+}
+
+svg:active{
+    color: aqua;
+}
+
+.tab {
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #f1f1f1;
+    text-align: center;
+    line-height: 50px;
+    transition: top 0.3s;
+  }
+  
+  .tab.show {
+    display: none;
+  }
+  

@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(/aset/backblur.png);
+    background-repeat: 0;
+    background-size: cover;
+}
+
+body.screenshot .navbar .nav{
+    background-color: #000;
+}
+
+.container{
+    overflow-y: scroll;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    height: 70%;
+    width: 15%;
+}
+
+.navbar .nav{
+    position: fixed;
+    background-color: #fff;
+    height: 70%;
+    width: 1%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: 0.5s ease;
+    border: #333646 1px solid;
+    overflow: hidden;
+    box-shadow: 5px 7px rgba(00, 00, 00, 0.2);
+}
+
+.nav:hover{
+    width: 12%;
+}
+
+#body.color .nav, #body.color .form{
+    background-color: #465557;
+}
+
+
+@media (max-width: 1000px){
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar{
+    width: 0%;
+    display: none;
+}
+
+.form{
+    margin: 125vh 0 5vh 0;
+    height: 200vh;
+    width: 95%;
+    background-color: #fff;
+    border-radius: 10px;
+    border: #333646 1px solid;
+    box-shadow: 5px 7px rgba(00, 00, 00, 0.2);
+}
+
+.ads{
+    display: none;
+}
+
+}
+
+.nav .isian{
+    display: none;
+    transition: 0.5s ease-out 1s;
+    height: 100%;
+}
+
+
+.nav:hover .isian{
+    display: contents;
+    height: 100%;
+}
+
+.atas{
+    height: 35%;
+}
+
+.nav .isian .atas .logo{
+    display: flex;
+    align-items: flex-end;
+    height: 70%;
+}
+.nav .isian .atas .logo img{
+    width: 100%;
+}
+
+.nav .isian .atas .title{
+    display: grid;
+    font-weight: bold;
+    justify-content: center;
+    height: 30%;
+    width: 100%;
+    font-size: 17px;
+}
+
+.nav .isian .atas .title p{
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+}
+
+.nav .bawah{
+    display: flexbox;
+    height: 60%;
+}
+
+.nav .bawah .daftar{
+    display: flexbox;
+    align-items: flex-start;
+    width: 100%;
+    margin: 3px 0 10px 0;
+    transition: 0.5s ease;
+    border: transparent 1px solid;
+}
+
+.nav .bawah .daftar:hover{
+    height: auto;
+}
+
+.nav .bawah .daftar #right{display: flex;}
+.nav .bawah .daftar:hover #right{display: none;}
+.nav .bawah .daftar #down{display: none;}
+.nav .bawah .daftar:hover #down{display: flex;}
+#body.color #sun{display: none;}
+#body.color #moon{display: flex;}
+#body #sun{display: flex;}
+#body #moon{display: none;}
+
+.nav .bawah .box{
+    display: flex;
+    justify-content: space-between;
+    height: 13.5%;
+    margin-left: 5px;
+    border: transparent 1px solid;
+}
+
+.title-D{
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.tombol-D{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .bawah .halaman{
+    height: 12%;
+    width: 100%;
+    transition: 0.5s ease;
+    border: #333646 1px solid;
+}
+
+.nav .bawah .halaman:hover{
+    height: 70%;
+}
+
+.nav .bawah .boxname{
+    display: grid;
+    transition: 0.5s ease 2s;
+    margin-left: 9px;
+    justify-content: space-between;
+}
+
+.nav .bawah .daftar:hover .boxname{
+    display: grid;
+}
+
+.boxname a{
+    width: 100%;
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+}
+
+
+#body.color .boxname a, #body.color .title, #body.color .title-D, #body.color .endtitle{
+    color: #fff;
+}
+
+@media (min-width: 1000px){
+.form{
+    margin: 145vh 0 15vh 0;
+    height: 200vh;
+    width: 70%;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    border: #333646 1px solid;
+    box-shadow: 5px 7px rgba(00, 00, 00, 0.2);
+}
+}
+
+.nav .tombol{
+    display: grid;
+    align-items: center;
+    height: 80px;
+}
+
+.nav .daftar:hover .tombol{
+    display: grid;
+}
+
+.nav .tombol .up, .nav .tombol .down{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.nav .tombol a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    box-shadow: 1px 3px rgba(00, 00, 00, 0.2);
+    border: transparent;
+    background-color: #fff;
+}
+
+#body.color .tombol a{
+    color: #fff;
+    background-color: gray;
+}
+
+.endtitle{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 12px;
+    height: 5%;
+}
+
+@media (min-width: 1000px){
+.ads{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 70%;
+    width: 15%;
+}
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+.comingsoon{
+    color: grey;
+}
+
+svg:active{
+    color: aqua;
+}
