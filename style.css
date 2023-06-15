@@ -1018,6 +1018,7 @@ a {
 
 .hidden-section .gambar {
     opacity: 0;
+    overflow: hidden;
     margin-top: 30px;
 }
 
