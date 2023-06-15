@@ -312,6 +312,10 @@ a {
 }
 
 @media (max-width: 800px) {
+    
+    #pc{
+        display: none;
+    }
 
     .header{
         justify-content: space-evenly;
@@ -623,7 +627,10 @@ a {
 }
 
 @media (min-width: 800px) {
-
+    
+    #pc{
+        display: flex;
+    }
 
     #alert {
         display: none;
