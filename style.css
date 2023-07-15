@@ -470,9 +470,9 @@ a {
     }
 
     .logo .lingkaran img {
-        width: 510px;
-        height: 115px;
-        margin-top: -9px;
+        width: 910px;
+        height: 150px;
+        margin-top: -25px;
     }
 
     .feature .kumpulan .gambar .title {
@@ -529,7 +529,6 @@ a {
         align-items: flex-end;
         height: 22vh;
         width: 90%;
-        border-radius: 10px;
         background-color: #fff;
     }
 

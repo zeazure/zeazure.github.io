@@ -185,7 +185,7 @@ window.addEventListener('scroll', function () {
     var scrollY = window.pageYOffset;
 
     // Ketinggian saat halaman muncul (misalnya 300px)
-    var revealHeight = 1350;
+    var revealHeight = 1150;
 
     if (scrollY > revealHeight && scrollY < windowHeight + revealHeight) {
         hiddenSection.classList.add('visible');
