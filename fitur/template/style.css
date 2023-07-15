@@ -1,27 +1,20 @@
-@media (min-width: 1000px) {
-  * {
+*{
     font-family: 'Arial';
   }
-
-  #alert {
-    display: none;
-  }
-
-  #mobile {
-    display: none;
-  }
-
-  body {
+  
+  body{
     margin: 0;
-    padding: 0;
-    background-color: #057E8D;
+    background-color: #0084A4;
     overflow-x: hidden;
   }
-
-  .background {
+  
+  .background{
+    margin-top: -32vh;
+    margin-left: 155vh;
     width: 500px;
   }
-
+  
+  
   .container {
     position: absolute;
     width: 100%;
@@ -146,7 +139,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 15%;
+    width: 10%;
   }
 
   .header .opsi a {
@@ -314,9 +307,10 @@
 
   .artikel {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 23vh;
+    height: 35vh;
     width: 100%;
     margin: 10px;
     margin-left: 0;
@@ -325,220 +319,137 @@
     border-radius: 5px;
   }
 
-  .artikel .judul h2 {
-    margin: 12px 0 0 40px;
+  .artikel .perkenalan{
+    height: 100%;
+    width: 45%;
   }
 
-  .artikel .pilihan {
+  .artikel .head{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    height: 25vh;
-    width: 100%;
-  }
-
-  .artikel .pilihan .kotak {
-    display: flex;
     justify-content: center;
-    align-items: center;
-    width: 20%;
-    height: 80%;
-    color: #000;
-    font-weight: bold;
-    overflow: hidden;
-    box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.2);
-    background-color: #fff;
-    border-radius: 10px;
+    color: #4fd6ff;
+    height: 40%;
   }
 
-  .artikel .pilihan .judul {
-    position: absolute;
+  .artikel .judul{
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    border-radius: 10px;
-    font-size: 0px;
-    height: 6.7%;
-    margin-top: 9px;
-    width: 20%;
+    height: 15%;
   }
 
-  .artikel .pilihan .kotak .judul {
-    transition: 0.5s ease;
-    font-size: 15px;
-    margin-top: 12.5px;
-    height: 6.7%;
-    color: #ffffff;
-    background: linear-gradient(transparent, #a3a1a144, #e9e9e944, #ffffffdc);
+  .artikel .judul h2{
+    margin: 0;
   }
 
-  .artikel .pilihan img {
-    width: 100%;
-    height: 100%;
+  .artikel .isi{
+    height: 43%;
+    font-size: 17px;
   }
 
-  .utama {
+  .utama{
     height: 130vh;
     display: flex;
   }
-
-  .ads {
+  
+  .ads{
     margin-top: 15px;
     height: 80%;
-    width: 5%;
+    width: 10%;
+  }
+  
+  .article{
+    margin-top: 15px;
+    padding-left: 5px;
+    height: 80%;
+    width: 80%;
+  }
+  
+  .article .isi{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    height: 50vh;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .article .isi .data{
+    height: 35vh;
+    width: 50vh;
+    border-radius: 7px;
+    margin-left: 5px;
+    overflow: hidden;
+    transition: 0.3s ease;
+    box-shadow: 4px 5px 7px rgba(0,0,0,0.2);
   }
 
-  .isian a {
-    color: #000;
+  .article .isi .data:hover{
+    transform: scale(1.02);
+  }
+
+  .article .isi .data .gambar{
+    height: 25vh;
+  }
+
+  .data .judul{
+    height: 10vh;
     text-decoration: none;
   }
 
-  .article {
-    margin-top: 15px;
-    height: 80%;
-    width: 67%;
-  }
-
-  .article .isi {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    height: 22vh;
-    width: 97%;
-    border-radius: 5px;
-    box-shadow: 2px 3px 5px 1px rgba(0, 0, 0, 0.2);
-  }
-
-  .article .isi:hover{
-    transform: scale(1.01);
-    transition: 0.3s ease;
-  }
-
-  .article .isi .gambar {
+  .data .judul .atas{
     display: flex;
     align-items: center;
-    overflow: hidden;
-    height: 18vh;
-    width: 25%;
-  }
-
-  .article .isi .gambar img {
-    width: 100%;
-  }
-
-  .article .isi .deskripsi {
-    margin-left: 10px;
-    width: 70%;
-  }
-
-  .article .isi .deskripsi .title {
-    display: flex;
-    height: 4vh;
-    align-items: flex-end;
-  }
-
-  .article .isi .deskripsi .desk {
-    height: 55px;
-  }
-
-  .article .isi .deskripsi .desk p {
-    display: flex;
-    align-items: flex-start;
-    margin: 0px;
-  }
-
-  .article .isi .deskripsi .tombol {
-    display: flex;
-    justify-content: space-between;
+    font-weight: bold;
+    font-size: 17px;
+    padding-left: 2px;
     height: 5vh;
-    margin-top: 5px;
   }
 
-  .article .isi .deskripsi .tombol .button {
+  .data .judul .bawah{
     display: flex;
-    align-items: flex-end;
-    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 4px;
+    height: 5vh;
+  }
+
+  .data .judul .bawah .kiri{
+    font-size: 12px;
+    margin-left: 5px;
+  }
+
+  .data .judul .bawah p{
     font-size: 14px;
+    outline: none;
   }
-
-  .utama .side {
-    margin-top: 15px;
-    width: 23%;
-    height: 80%;
-  }
-
-  .utama .side .atas {
-    height: 45vh;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.2);
-    background-color: #e0e0e0;
-  }
-
-  .utama .side .tengah {
-    margin-top: 10px;
-    height: 20vh;
-    padding-left: 10px;
-    padding-right: 10px;
-    box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.2);
-    padding-top: 10px;
-    background-color: #e0e0e0;
-  }
-
-  .side .tengah .isi {
-    display: flex;
-    margin-top: 10px;
-    height: 14vh;
-    width: 100%;
-  }
-
-  .side .tengah .isi img {
-    height: 70px;
-    width: 97px;
-  }
-
-  .side .bawah {
-    margin-top: 10px;
-    height: 48vh;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.2);
-    background-color: #e0e0e0;
-
-  }
-
-  .footer {
-    background-color: #005974;
-    height: 52vh;
+  
+  .footer{
+    background-color: #343646;
+    height: 47vh;
     color: #fff;
   }
   
-  #pc.color .footer{
-    background-color: rgb(90, 90, 90);
-  }
-
-  .footer .title {
+  .footer .title{
     display: flex;
     height: 12vh;
     width: 100%;
   }
-
-  .footer .title .logo {
+  
+  .footer .title .logo{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 7%;
   }
-
-  .footer .title .logo img {
+  
+  .footer .title .logo img{
     width: 61%;
   }
-
-  .footer .title .slogan {
+  
+  .footer .title .slogan{
     height: 100%;
     width: 90%;
     display: flex;
@@ -546,53 +457,38 @@
     align-items: center;
     font-weight: bold;
   }
-
-  .footer .isian {
+  
+  .footer .isian{
     height: 33vh;
     width: 100%;
     margin-top: 10px;
     background-color: transparent;
     display: flex;
   }
-
-  .footer .isian .menu,
-  .footer .isian .medsos,
-  .footer .isian .kontak {
+  
+  .footer .isian .menu, .footer .isian .medsos, .footer .isian .kontak{
     display: flex;
     justify-content: center;
     height: 100%;
     width: 33%;
   }
-
-  .footer .text {
+  
+  .footer .text{
     height: 100%;
     width: 50%;
   }
-
-  .footer #kontak {
+  
+  .footer #kontak{
     display: none;
-  }
-}
+  }  
 
-@media (max-height: 450px) {
-  #mobile {
-    display: none;
-  }
-
-  #pc {
-    display: none;
+  #kalkulator{
+    background-image: url(/asset/wallmorning.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
-  #alert {
-    display: flex;
+  a:-webkit-any-link{
+    color: #000;
+    text-decoration: none;
   }
-
-  .alert {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    height: 99vh;
-  }
-
-}

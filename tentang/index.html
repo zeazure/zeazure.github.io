@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tentang Website</title>
+</head>
+<body>
+    <div class="latar">
+        <div class="atas">
+        </div>
+        <div class="bawah">
+            <div class="board">
+                    <div class="slide">
+                        <center>
+                            <div class="isian fade"> 
+                                <center><img src="/asset/logo_light.png" alt=""></center> 
+                                <h2><center>Tentang Website</center></h2>    
+                                <p><center>Hi! Selamat datang di Zeazure, Website ini adalah website kembangan dari Tristan-Web yang berfokus pada literasi dan informasi. Pada website ini juga terdapat fitur interaktif dan template program sederhana.</center></p>
+                            </div>
+                        </center>
+
+                        <center>
+                            <div class="isian fade">
+                                <center><img src="/asset/logo_ofc.png" alt=""></center>
+                                <h2><center>Tentang Developer</center></h2>       
+                                <p><center>Website ini dirilis pada tanggal 27 Juli 2022 sebagai website pribadi untuk keperluan pembelajaran dan membantu aktifitas sehari-hari. Namun akhirnya dipublikasi pada tanggal 27 Juni 2023 dengan tampilan dan fitur yang lebih banyak lagi.</center></p>
+                            </div>
+                        </center>
+            
+                        <center>
+                            <div class="isian fade">
+                                <center><img src="/asset/logo_dark.png" alt=""></center>
+                                <h2><center>Tentang Update</center></h2>       
+                                <p><center>V.0.03 | Pada update ini telah kami tambahkan fitur Parralax Effect, Background yang otomatis berganti mengikuti jam, fitur mode gelap dan terang, serta website topup (Riltz Store) untuk keperluan topup game bebas biaya admin.</center></p>
+                            </div>
+                        </center>
+            
+                        
+                         
+                    </div>
+
+
+                    <center>
+                    <div class="tombol">
+                        <a class="prev" onClick="nextslide(-1)">&#10094;</a>
+                        <div class="page">
+                            <span class="dot" onClick="dotslide(1)"></span>
+                            <span class="dot" onClick="dotslide(2)"></span>
+                            <span class="dot" onClick="dotslide(3)"></span>
+                        </div> 
+                        <a class="next" onClick="nextslide(1)">&#10095;</a> 
+                    </div> 
+                </center>    
+            </div>
+        </div>
+    </div>
+
+<script>
+    var indexValue = 0;
+    function slideShow(){
+        var x;
+        const img = document.getElementsByClassName("isian");
+        for(x = 0; x < img.length; x++){
+            img[x].style.display = "none";
+        }
+        indexValue++;
+        if(indexValue > img.length){indexValue = 1}
+        img[indexValue -1].style.display = "block"; 
+    }
+    slideShow();
+
+    var slideIndex = 1;
+        showSlide(slideIndex);
+
+    function nextslide(n){
+        showSlide(slideIndex += n);
+    }
+
+    function dotslide(n){
+        showSlide(slideIndex = n);
+    }
+
+    function showSlide(n) {
+        var i;
+        var slides = document.getElementsByClassName("isian");
+        var dot = document.getElementsByClassName("dot");
+        
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+            
+            slides[i].style.display = "none";
+        }
+
+        for (i = 0; i < slides.length; i++) {
+            
+            dot[i].className = dot[i].className.replace(" active", "");
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+
+        dot[slideIndex - 1].className += " active";
+        
+
+
+    }
+
+    var today = new Date();
+        const latar = document.getElementsByClassName('latar')[0];
+		var currentHour = today.getHours();
+		if (currentHour >= 6 && currentHour < 18) { /* pagi hari */
+			latar.style.backgroundImage = "url('/asset/wallmorning.jpg')";
+		} else { /* malam hari */
+			latar.style.backgroundImage = "url('/asset/wallpaper.jpg')";
+		}
+</script>
+</body>
+</html>

@@ -1,10 +1,12 @@
-81E5FE
-48C7E6
-303F9F
-65FF28
-F4FF28
-30D5C8
+81E5FE (Biru)
+48C7E6 (Toska)
+303F9F (biru tua)
+65FF28 (Hijau)
+F4FF28 (Kuning)
+30D5C8 (aqua)
+979AFF (violet)
 
 cara kerja :
-penjual kasih informasi akun
-penjual bayar biaya layanan 5.000
+Color Defalut Website
+
+Z34zur3271234567876523153265

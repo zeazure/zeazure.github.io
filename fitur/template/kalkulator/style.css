@@ -1,0 +1,277 @@
+@media (min-with: 900px){
+    
+}
+
+*{
+    font-family: 'arial';
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    min-height: 30vh;
+}
+
+.side{
+    position: sticky;
+    top: 0;
+    transition: 0.5s ease;
+    display: block;
+    background-color: #0084A4;
+    color: #fff;
+    width: 200px;
+    height: 100vh;
+    left: 0;
+    margin: -10px 0 0 -10px;
+    border: #000 1px ridge;
+    box-shadow: 3px 0px rgba(0, 0, 0, 0.1);
+    border-bottom: none;
+}
+
+.side .logo img{
+    width: 50%;
+    display: inline;
+    margin-left: 7px;
+}
+
+.pilihan{
+    display: flex;
+    margin-left: 15px;
+}
+
+.pilihan .ikon{
+    display: grid;
+}
+
+.pilihan .opsi{
+    display: grid;
+    margin-left: 10px;
+    align-items: flex-end;
+}
+
+
+.pilihan .opsi a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.endcredit{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 55vh;
+}
+
+
+.isian {
+    width: 60%;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.isian h2{
+    color: #0084A4;
+    font-size: 35px;
+}
+
+.isian .isi{
+    margin-top: 30px;
+}
+
+.isian p{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.isian h3{
+    margin-top: 25px;
+    font-size: 30px;
+}
+
+.isian textarea{
+    width: 700px;
+    height: 300px;
+    border-radius: 10px;
+    resize: none;
+    background-color: #ffffe6;
+}
+
+.isian textarea:focus{
+    outline: none;
+}
+
+.sidebar .main .list-item .deskripsia,
+.deskripsib, .deskripsic, .deskripsid, .deskripsie {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    align-items: center;
+    color: #ffffff;
+}
+
+
+@keyframes moveUpThenDown {
+    0%{
+        top: 0;
+    }
+    50%{
+        top: -27%;
+    }
+    100%{
+        top: -14px;
+    }
+}
+
+@keyframes shakeUp {
+    0%{
+        transform: rotateZ(0);
+    }
+    25%{
+        transform: rotateZ(-10deg);
+    }
+    50%{
+        transform: rotateZ(0);
+    }
+    75%{
+        transform: rotateZ(10deg);
+    }
+    100%{
+        transform: rotateZ(0);
+    }
+}
+
+@keyframes shakedown {
+    0%{
+        transform: rotateZ(0);
+    }
+    80%{
+        transform: rotateZ(3deg);
+    }
+    90%{
+        transform: rotateZ(-3deg);
+    }
+    100%{
+        transform: rotateZ(0);
+    }
+}
+
+.kalkulator {
+    background: #fff;
+    position: relative;
+    display: grid;
+    width: 248px;
+    border: 5px solid #111;
+    border-radius: 15px;
+}
+
+.kalkulator .angka {
+    grid-column: span 4;
+    height: 80px;
+    width: 220px;
+    text-align: right;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+input {
+    border-radius: 15px;
+}
+
+.kalkulator span {
+    display: grid;
+    width: 60px;
+    height: 60px;
+    color: #111;
+    background: 80c2835;
+    place-items: center;
+    border: 1.5px solid rgba(0, 0, 0, .1);
+}
+
+.kalkulator span:active {
+    background: transparent;
+    color: #111;
+}
+
+.kalkulator span.clear {
+    background: gray;
+}
+
+.kalkulator span.hasil {
+    background: gray;
+    border-bottom-right-radius: 10px;
+}
+
+.kalkulator span.mode {
+    background: gray;
+}
+
+.samping{
+    margin-left: 50px;
+    position: sticky;
+    top: 0;
+    width: 20%;
+    height: 80%;
+  }
+  
+.samping .atas{
+    height: 30vh;
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+    background-color: #e0e0e0;
+    border: #000 1px solid;
+  }
+  
+.samping .tengah{
+    margin-top: 10px;
+    height: 20vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+    background-color: #e0e0e0;
+    border: #000 1px solid;
+}
+
+.samping .tengah .ket{
+    height: 14vh;
+    overflow-y: scroll;
+}
+
+.samping .tengah .isi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 14vh;
+    width: 20%;
+    border: #000 1px solid;
+  }
+  
+  .samping .tengah .isi img{
+    height: 70px;
+    width: 10px;
+  }
+  
+  .samping .bawah{
+    margin-top: 10px;
+    height: 37vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    border-radius: 7px;
+    background-color: #e0e0e0;
+    border: #000 1px solid;
+  
+  }
+  
+  
+  ::-webkit-scrollbar{
+    width: 15px;
+  }

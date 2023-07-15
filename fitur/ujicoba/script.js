@@ -1,32 +1,63 @@
-const sections = document.querySelectorAll('.parallax-section');
-
-window.addEventListener('scroll', function() {
-  const scrollTop = window.pageYOffset;
-
-  sections.forEach(function(section, index) {
-    const offset = section.offsetTop;
-    const height = section.offsetHeight;
-
-    if (scrollTop >= offset && scrollTop < offset + height) {
-      section.style.backgroundPositionY = (scrollTop - offset) * 0.7 + 'px';
-    } else {
-      section.style.backgroundPositionY = 'center';
+var indexValue = 0;
+function slideShow(){
+    var x;
+    const img = document.getElementsByClassName("isian");
+    for(x = 0; x < img.length; x++){
+        img[x].style.display = "none";
     }
-  });
-});
-const sections = document.querySelectorAll('.parallax-section');
+    indexValue++;
+    if(indexValue > img.length){indexValue = 1}
+    img[indexValue -1].style.display = "block"; 
+}
+slideShow();
 
-window.addEventListener('scroll', function() {
-  const scrollTop = window.pageYOffset;
+var slideIndex = 1;
+    showSlide(slideIndex);
 
-  sections.forEach(function(section, index) {
-    const offset = section.offsetTop;
-    const height = section.offsetHeight;
+function nextslide(n){
+    showSlide(slideIndex += n);
+}
 
-    if (scrollTop >= offset && scrollTop < offset + height) {
-      section.style.backgroundPositionY = (scrollTop - offset) * 0.7 + 'px';
-    } else {
-      section.style.backgroundPositionY = 'center';
+function dotslide(n){
+    showSlide(slideIndex = n);
+}
+
+function showSlide(n) {
+    var i;
+    var slides = document.getElementsByClassName("isian");
+    var dot = document.getElementsByClassName("dot");
+    
+    if (n > slides.length) {
+        slideIndex = 1
     }
-  });
-});
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+        
+        slides[i].style.display = "none";
+    }
+
+    for (i = 0; i < slides.length; i++) {
+        
+        dot[i].className = dot[i].className.replace(" active", "");
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+
+    dot[slideIndex - 1].className += " active";
+    
+
+
+}
+
+var today = new Date();
+    const latar = document.getElementsByClassName('latar')[0];
+var currentHour = today.getHours();
+if (currentHour >= 6 && currentHour < 18) { /* pagi hari */
+  latar.style.backgroundImage = "url('/asset/wallmorning.jpg')";
+} else { /* malam hari */
+  latar.style.backgroundImage = "url('/asset/wallpaper.jpg')";
+}
+
+AIzaSyAMSaaYAOFbVLcGkY61CwmjdvKCLQkSZso //API youtube
