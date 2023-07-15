@@ -172,7 +172,7 @@
   }
 
   .isian .highlight {
-    height: 25vh;
+    height: 29vh;
     margin-top: 5px;
     border-radius: 10px;
     transition: 0.5s ease;
@@ -207,8 +207,8 @@
   }
 
   .highlight .slides {
-    height: 17vh;
-    width: 83%;
+    height: 20vh;
+    width: 100%;
     display: flex;
     justify-content: center;
   }
