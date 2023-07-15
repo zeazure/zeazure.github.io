@@ -992,7 +992,7 @@
 
   .artikel .isi .kiri .isi-artikel {
     margin-left: 20px;
-    font-size: 20px;
+    font-size: 19px;
     width: 90%;
   }
 
@@ -1056,8 +1056,8 @@
     color: #fff;
     width: 80%;
     margin-left: 7px;
-    font-weight: 300;
-    font-size: 130%;
+    font-weight: bold;
+    font-size: 120%;
   }
 
   .artikel .isi .kanan .data .lainnya .kotak .logo {

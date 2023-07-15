@@ -189,6 +189,7 @@
   .highlight {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     width: 100%;
     height: 1vh;
@@ -207,7 +208,7 @@
 
   .highlight .slides {
     height: 17vh;
-    width: 100%;
+    width: 83%;
     display: flex;
     justify-content: center;
   }
@@ -336,7 +337,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    height: 14vh;
+    height: 17vh;
     width: 100%;
     overflow: hidden;
     border-radius: 10px;
