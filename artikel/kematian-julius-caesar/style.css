@@ -1,12 +1,9 @@
 *{
   text-decoration: none;
+  font-family: Roboto,sans-serif;
 }
 
 @media (min-width: 1000px) {
-  * {
-    font-family: 'Arial';
-  }
-
   #alert {
     display: none;
   }
@@ -584,10 +581,6 @@
 
 
 @media (max-width: 1000px) {
-  * {
-    font-family: 'Arial';
-  }
-
   #alert {
     display: none;
   }
@@ -959,13 +952,14 @@
   }
 
   .title .judul h2 {
-    font-size: 35px;
+    font-size: 23px;
     margin: 0;
   }
 
   .artikel .title .id {
     display: flex;
     margin-top: 15px;
+    font-size: 14px;
     justify-content: space-between;
     height: auto;
   }
@@ -992,7 +986,7 @@
 
   .artikel .isi .kiri .isi-artikel {
     margin-left: 20px;
-    font-size: 19px;
+    font-size: 16px;
     width: 90%;
   }
 

@@ -1,12 +1,9 @@
 *{
   text-decoration: none;
+  font-family: Roboto,sans-serif;
 }
 
 @media (min-width: 1000px) {
-  * {
-    font-family: 'Arial';
-  }
-
   #alert {
     display: none;
   }
@@ -178,7 +175,7 @@
     justify-content: center;
     width: 10%;
     transition: 0.5s ease;
-    background-color: #fcff4f;
+    background-color: #4fd6ff;
   }
 
   .marque .kiri p {
@@ -193,7 +190,7 @@
   .marque .kanan {
     display: flex;
     align-items: center;
-    background-color: #faf9db;
+    background-color: #dbf3fa;
     width: 90%;
   }
 
@@ -225,7 +222,7 @@
 
   .isian {
     display: flex;
-    background: linear-gradient(#fffcd3, #fff1f1, #fff, #fff, #fff, #fff, #fff);
+    background: linear-gradient(#a1ecff, #d3f6ff, #fff, #fff, #fff, #fff, #fff);
   }
 
   .isian .sidebar {
@@ -584,10 +581,6 @@
 
 
 @media (max-width: 1000px) {
-  * {
-    font-family: 'Arial';
-  }
-
   #alert {
     display: none;
   }
@@ -803,7 +796,7 @@
 
   .isian {
     display: flex;
-    background: linear-gradient(#cff5ff, #e5faff, #fff, #fff, #fff, #fff, #fff, #fff, #fff, #fff);
+    background: linear-gradient(#a1ecff, #d3f6ff, #fff, #fff, #fff, #fff, #fff, #fff);
     height: auto;
   }
 
@@ -959,13 +952,14 @@
   }
 
   .title .judul h2 {
-    font-size: 35px;
+    font-size: 23px;
     margin: 0;
   }
 
   .artikel .title .id {
     display: flex;
     margin-top: 15px;
+    font-size: 14px;
     justify-content: space-between;
     height: auto;
   }
@@ -992,7 +986,7 @@
 
   .artikel .isi .kiri .isi-artikel {
     margin-left: 20px;
-    font-size: 19px;
+    font-size: 16px;
     width: 90%;
   }
 
