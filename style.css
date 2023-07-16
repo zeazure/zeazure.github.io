@@ -1,5 +1,5 @@
 * {
-    font-family: 'arial';
+    font-family: Roboto,sans-serif;
 }
 
 body {
@@ -108,7 +108,6 @@ a {
 @media (min-width: 1000px) {
     .isian .perkenalan .isi p {
         width: 60%;
-        font-size: 100px;
     }
 
     .isian .headline {
@@ -201,7 +200,7 @@ a {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    font-size: 17px;
+    font-size: 16px;
     height: auto;
 }
 
@@ -411,7 +410,7 @@ a {
 
 
     .isian .perkenalan .isi p {
-        font-size: 17px;
+        font-size: 16px;
         margin: 0;
         width: 78%;
     }
@@ -488,7 +487,7 @@ a {
         display: flex;
         justify-content: center;
         height: 28%;
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .feature .gambar .deskripsi p {
@@ -620,7 +619,7 @@ a {
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .other .isian {
@@ -645,7 +644,7 @@ a {
         height: 50px;
         width: 150px;
         border-radius: 10px;
-        font-size: 10px;
+        font-size: 16px;
         background-color: #fff;
         box-shadow: 1px 1px 1px 1px rgba(00, 00, 00, 0.2);
     }
@@ -730,7 +729,7 @@ a {
 
 
     .isian .perkenalan .isi p {
-        font-size: 17px;
+        font-size: 16px;
         margin: 0;
         width: 50%;
     }
