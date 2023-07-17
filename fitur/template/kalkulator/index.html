@@ -1,50 +1,134 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Cara Mmbuat Kalkulator Dengan HTML</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css?family=Ubuntu:wght@400;500;700;&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/cf16e27ece.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="Font Awesome_files/all.css">
-        <style>
-        </style>
-    </head>
-    <body>
-        <div class="container">
-          <div class="side">
-            <div class="logo">
-              <center><img src="/asset/logo_light.png" style="margin-top: 20%; margin-left: 7px;"></center>
-            </div>
-            <div class="pilihan">
-              <div class="ikon">
-                <i class="home">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" fill="currentColor" class="bi bi-home" viewBox="0 0 16 16" style="margin-top: 22px;">
-                  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
-                  <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
-                </svg></i> 
-                <i class="bi bi-pasar"></i>
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" fill="currentColor" class="bi bi-graph-up-arrow" viewBox="0 0 16 16" style="margin-top: 17px;">
-                  <path fill-rule="evenodd" d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5Z"/>
-                </svg>    
-              </div>
-              <div class="opsi">
-              <a href="/fitur/template/"> <p  class="home" style="padding: 1px; font-weight: 700;">Home</p></a>
-              <a href="mailto: trismiweb@gmail.com"> <p style="padding: 1px;">Feedback</p></a>
-              </div>
-            </div>
-          </div>  
-        <div class="isian">
-          <h2>Cara Membuat Kalkulator</h2>
-          <span>By: Admin</span>
-          <div class="isi">
-            <p>Kalkulator adalah alat menghitung yang sering kali kita gunakan dalam menyelesaikan tugas yang berhubungan dengan menghitung atau mengolah angka. Tapi taukah teman-teman kita dapat membuat kalkulator sendiri dengan menggunakan bahasa pemprograman.</p>
-            <p>Sebenarnya ada banyak cara untuk membuat sebuah kalkulator dengan Bahasa pemprograman, namun pada kesempatan kali ini kita akan menggunakan HTML dan sedikit desain sederhana menggunakan CSS untuk membuat kalkulator. Untuk project kali ini teman-teman juga tidak perlu menggunakan library atau ekstension dari luar, karena semua element HTML yang kita gunakan akan menggunakan element dari HTML nya langsung.</p>
-            <h3>HTML</h3>
-            <p>Yang pertama kita buat sebuah project HTML dengan diberinama ‘index.html’ Untuk aplikasi dan cara membuat file HTML sudah saya jelaskan di artikel berikut (<a href="">klik disini</a>). Selanjutnya teman-teman dapat mengcopy teks html yang sudah saya buat dibawah ini ke dalam project teman-teman.</p>
-            <p id="myTextarea">Jika susah teman-teman dapat membaca petunjuk  yang sudah saya tulis di dalam kotak untuk Langkah selanjutnya.</p>
-            <textarea readonly name="" id="myInputs" cols="30" rows="10">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="//securepubads.g.doubleclick.net" rel="dns-prefetch">
+  <link href="//static.criteo.net" rel="dns-prefetch">
+  <link href="//bidder.criteo.com" rel="dns-prefetch">
+  <link href="//rtax.criteo.com" rel="dns-prefetch">
+  <link href="//tpc.googlesyndication.com" rel="dns-prefetch">
+  <link href="//cm.g.doubleclick.net" rel="dns-prefetch">
+  <link href="//s0.2mdn.net" rel="dns-prefetch">
+  <link href="//www.facebook.com" rel="dns-prefetch">
+  <link href="//mcdp-sadc1.outbrain.com" rel="dns-prefetch">
+  <link href="//code.jquery.com" rel="dns-prefetch">
+  <link href="//mc.yandex.ru" rel="dns-prefetch">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="template bahasa pemprograman gratis cara membuat kalkulator dengan html dan css">
+  <meta name="keywords" content="Muhmmad Wildan Yusufy, Tristan Ahnaf Wiraatmaja">
+  <meta name="googlebot-news" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="author" content="Zeazure Media Informasi">
+  <meta name="robots" content="index, follow">
+  <meta name="robots" content="max-image-preview:large">
+  <meta name="language" content="id">
+  <meta name="geo.country" content="id">
+  <meta http-equiv="content-language" content="In-Id">
+  <meta name="geo.placename" content="Indonesia">
+
+  <!-- S:fb meta -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="template bahasa pemprograman gratis cara membuat kalkulator dengan html dan css">
+  <meta property="og:description" content="template bahasa pemprograman gratis cara membuat kalkulator dengan html dan css">
+  <meta property="og:url" content="https://zeazure.github.io/fitur/template/kalkulator">
+  <meta property="og:site_name" content="zeazure.gtihub.io">
+  <!-- e:fb meta -->
+
+  <!-- S:tweeter card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@zeazure.ofc">
+  <meta name="twitter:creator" content="@zeazure.ofc">
+  <meta name="twitter:title" content="&quot;Reshuffle&quot; template bahasa pemprograman gratis cara membuat kalkulator dengan html dan css">
+  <meta name="twitter:description" content="template bahasa pemprograman gratis cara membuat kalkulator dengan html dan css">
+  <!-- E:tweeter card -->
+  <meta name="content_category" content="News">
+  <meta name="content_subcategory" content="Nasional">
+  <meta name="content_location" content="jakarta">
+  <meta name="content_author_id" content="1644">
+  <meta name="content_author" content="Muhammad Wildan Yusufy">
+  <meta name="content_editor_id" content="1644">
+  <meta name="content_editor" content="Tristan Ahnaf Wiraatmaja">
+  <meta name="content_lipsus" content="">
+  <meta name="content_lipsus_id" content="">
+  <meta name="content_sensi" content="">
+  <meta name="content_type" content="Standard">
+  <meta name="content_PublishedDate" content="2023-07-17 13:46:21">
+  <meta property="article:published_time" content="2023-07-17T06:46:21+00:00">
+  <meta name="content_source" content="">
+  <meta name="content_tag" content="Halaman Utama Website Zeazure">
+  <meta name="content_tags" content="Halaman Utama Website Zeazure">
+  <meta name="content_total_words" content="621">
+  <meta name="subscription" content="False">
+  <meta name="lestari_sdgs" content="">
+  <link rel="icon" href="/asset/favicon.ico" type="image/x-icon">
+  <title>Cara Mmbuat Kalkulator Dengan HTML</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:wght@400;500;700;&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/cf16e27ece.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="Font Awesome_files/all.css">
+  <style>
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="side">
+      <div class="logo">
+        <center><img src="/asset/logo_light.png" style="margin-top: 20%; margin-left: 7px;"></center>
+      </div>
+      <div class="pilihan">
+        <div class="ikon">
+          <i class="home">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" fill="currentColor" class="bi bi-home"
+              viewBox="0 0 16 16" style="margin-top: 22px;">
+              <path
+                d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z" />
+              <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z" />
+            </svg></i>
+          <i class="bi bi-pasar"></i>
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" fill="currentColor"
+            class="bi bi-graph-up-arrow" viewBox="0 0 16 16" style="margin-top: 17px;">
+            <path fill-rule="evenodd"
+              d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5Z" />
+          </svg>
+        </div>
+        <div class="opsi">
+          <a href="/fitur/template/">
+            <p class="home" style="padding: 1px; font-weight: 700;">Home</p>
+          </a>
+          <a href="mailto: trismiweb@gmail.com">
+            <p style="padding: 1px;">Feedback</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="isian">
+      <h2>Cara Membuat Kalkulator</h2>
+      <span>By: Admin</span>
+      <div class="isi">
+        <p>Kalkulator adalah alat menghitung yang sering kali kita gunakan dalam menyelesaikan tugas yang berhubungan
+          dengan menghitung atau mengolah angka. Tapi taukah teman-teman kita dapat membuat kalkulator sendiri dengan
+          menggunakan bahasa pemprograman.</p>
+        <p>Sebenarnya ada banyak cara untuk membuat sebuah kalkulator dengan Bahasa pemprograman, namun pada kesempatan
+          kali ini kita akan menggunakan HTML dan sedikit desain sederhana menggunakan CSS untuk membuat kalkulator.
+          Untuk project kali ini teman-teman juga tidak perlu menggunakan library atau ekstension dari luar, karena
+          semua element HTML yang kita gunakan akan menggunakan element dari HTML nya langsung.</p>
+        <h3>HTML</h3>
+        <p>Yang pertama kita buat sebuah project HTML dengan diberinama ‘index.html’ Untuk aplikasi dan cara membuat
+          file HTML sudah saya jelaskan di artikel berikut (<a href="">klik disini</a>). Selanjutnya teman-teman dapat
+          mengcopy teks html yang sudah saya buat dibawah ini ke dalam project teman-teman.</p>
+        <p id="myTextarea">Jika susah teman-teman dapat membaca petunjuk yang sudah saya tulis di dalam kotak untuk
+          Langkah selanjutnya.</p>
+        <textarea readonly name="" id="myInputs" cols="30" rows="10">
               <DOCTYPE html>
                 <html>
                   <head>
@@ -79,16 +163,21 @@
                   </body>
                 </html>
             </textarea>
-            <button onclick="copyToClipboards()" style="cursor: pointer;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
-                <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
-                <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
-              </svg>
-            </button>
-            <h3>CSS</h3>
-            <p>Selanjutnya kita tambahkan style CSS agar kalkulator yang sudah kita buat tadi menjadi lebih menarik.</p>
-            <p>Caranya teman-teman dapat mengcopy style CSS yang sudah saya siapkan dibawah ini ke halaman HTML yang sudah kalian buat. Untuk bagaimana cara membuat file CSS teman-teman dapat membaca artikel saya yang ini <a href="">(klik disini)</a>.</p>
-            <textarea readonly name="" id="myInput" cols="30" rows="10">
+        <button onclick="copyToClipboards()" style="cursor: pointer;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard"
+            viewBox="0 0 16 16">
+            <path
+              d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+            <path
+              d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+          </svg>
+        </button>
+        <h3>CSS</h3>
+        <p>Selanjutnya kita tambahkan style CSS agar kalkulator yang sudah kita buat tadi menjadi lebih menarik.</p>
+        <p>Caranya teman-teman dapat mengcopy style CSS yang sudah saya siapkan dibawah ini ke halaman HTML yang sudah
+          kalian buat. Untuk bagaimana cara membuat file CSS teman-teman dapat membaca artikel saya yang ini <a
+            href="">(klik disini)</a>.</p>
+        <textarea readonly name="" id="myInput" cols="30" rows="10">
               *{
                 margin: 0;
                 padding: 0;
@@ -155,84 +244,91 @@
                 background: gray;
             }
             </textarea>
-            <button onclick="copyToClipboard()" style="cursor: pointer;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
-                <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
-                <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
-              </svg>
-            </button>
-            <h3>HASIL</h3>
-            <p>Jadi deh. Gimana hasilnya?</p>
-            <p>Jika teman-teman ada pertanyaan, teman teman dapat DM saya via Instagram, atau tonton video berikut. Terima Kasih. (<a href="">klik disini</a>)</p>
-            <h3>Preview</h3>
-            <form class="kalkulator" name="calc">
-              <input class="angka" type="text"class name="txt" style="font-size: 30px;">            
-              <span class="num clear" onclick="document.calc.txt.value =''">C</span>
-              <span class="num mode" onclick="document.calc.txt.value -='txt'">.</span>
-              <span class="num mode" onclick="document.calc.txt.value /='100'">%</span>
-              <span class="num mode" onclick="document.calc.txt.value +='/'">/</span>
-              <span class="num" onclick="document.calc.txt.value +='7'">7</span>
-              <span class="num" onclick="document.calc.txt.value +='8'">8</span>
-              <span class="num" onclick="document.calc.txt.value +='9'">9</span>
-              <span class="num mode" onclick="document.calc.txt.value +='*'">x</span>
-              <span class="num" onclick="document.calc.txt.value +='4'">4</span>
-              <span class="num" onclick="document.calc.txt.value +='5'">5</span>
-              <span class="num" onclick="document.calc.txt.value +='6'">6</span>
-              <span class="num mode" onclick="document.calc.txt.value ='-'">-</span>
-              <span class="num" onclick="document.calc.txt.value +='1'">1</span>
-              <span class="num" onclick="document.calc.txt.value +='2'">2</span>
-              <span class="num" onclick="document.calc.txt.value +='3'">3</span>
-              <span class="num mode" onclick="document.calc.txt.value +='+'">+</span>
-              <span class="num" onclick="document.calc.txt.value +='0'">0</span>
-              <span class="num" onclick="document.calc.txt.value +='00'">00</span>
-              <span class="num" onclick="document.calc.txt.value +='000'">000</span>
-              
-              <span class="num hasil" onclick="document.calc.txt.value =eval(calc.txt.value)">=</span>
-          </form>  
-          </div>
-        </div>
-        <div class="samping">
-          <div class="atas" id="acara">
-            <h2>Template Lainnya</h2>
-            <div class="isi">
-              <p>Comming Soon...</p>
-            </div>
-          </div>
-          <div class="tengah">
-            <h2>Informasi Halaman</h2>
-            <div class="ket">
-            <p>"Cara Membuat Kalkulator"</p>
-            <p>Dalam template ini kalian hanya akan menggunakan 2 bahasa pemprograman yaitu HTML dan CSS. Kalian tidak perlu menambahkan ekstention lain dari luar karena hanya menggunakan element bawaan dari HTML. Teman-teman juga dapa mengubah desain dari kalkulatornya sesuai kebutuhan teman-teman</p>
-            </div>
-          </div>
-          <div class="bawah">
-            <h2>Iklan</h2>
-            <div class="isi">
-              <!--Buat Iklan Google-->
-            </div>
-          </div>
-        </div>
-            </div>
-          
-          </section>
+        <button onclick="copyToClipboard()" style="cursor: pointer;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard"
+            viewBox="0 0 16 16">
+            <path
+              d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+            <path
+              d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+          </svg>
+        </button>
+        <h3>HASIL</h3>
+        <p>Jadi deh. Gimana hasilnya?</p>
+        <p>Jika teman-teman ada pertanyaan, teman teman dapat DM saya via Instagram, atau tonton video berikut. Terima
+          Kasih. (<a href="">klik disini</a>)</p>
+        <h3>Preview</h3>
+        <form class="kalkulator" name="calc">
+          <input class="angka" type="text" class name="txt" style="font-size: 30px;">
+          <span class="num clear" onclick="document.calc.txt.value =''">C</span>
+          <span class="num mode" onclick="document.calc.txt.value -='txt'">.</span>
+          <span class="num mode" onclick="document.calc.txt.value /='100'">%</span>
+          <span class="num mode" onclick="document.calc.txt.value +='/'">/</span>
+          <span class="num" onclick="document.calc.txt.value +='7'">7</span>
+          <span class="num" onclick="document.calc.txt.value +='8'">8</span>
+          <span class="num" onclick="document.calc.txt.value +='9'">9</span>
+          <span class="num mode" onclick="document.calc.txt.value +='*'">x</span>
+          <span class="num" onclick="document.calc.txt.value +='4'">4</span>
+          <span class="num" onclick="document.calc.txt.value +='5'">5</span>
+          <span class="num" onclick="document.calc.txt.value +='6'">6</span>
+          <span class="num mode" onclick="document.calc.txt.value ='-'">-</span>
+          <span class="num" onclick="document.calc.txt.value +='1'">1</span>
+          <span class="num" onclick="document.calc.txt.value +='2'">2</span>
+          <span class="num" onclick="document.calc.txt.value +='3'">3</span>
+          <span class="num mode" onclick="document.calc.txt.value +='+'">+</span>
+          <span class="num" onclick="document.calc.txt.value +='0'">0</span>
+          <span class="num" onclick="document.calc.txt.value +='00'">00</span>
+          <span class="num" onclick="document.calc.txt.value +='000'">000</span>
 
-          <script>
-          function copyToClipboard() {
-            var copyText = document.getElementById("myInput");
-            copyText.select();
-            copyText.setSelectionRange(0, 99999);
-            document.execCommand("copy");
-            alert("Copied the text: " + copyText.value);
-          }
+          <span class="num hasil" onclick="document.calc.txt.value =eval(calc.txt.value)">=</span>
+        </form>
+      </div>
+    </div>
+    <div class="samping">
+      <div class="atas" id="acara">
+        <h2>Template Lainnya</h2>
+        <div class="isi">
+          <p>Comming Soon...</p>
+        </div>
+      </div>
+      <div class="tengah">
+        <h2>Informasi Halaman</h2>
+        <div class="ket">
+          <p>"Cara Membuat Kalkulator"</p>
+          <p>Dalam template ini kalian hanya akan menggunakan 2 bahasa pemprograman yaitu HTML dan CSS. Kalian tidak
+            perlu menambahkan ekstention lain dari luar karena hanya menggunakan element bawaan dari HTML. Teman-teman
+            juga dapa mengubah desain dari kalkulatornya sesuai kebutuhan teman-teman</p>
+        </div>
+      </div>
+      <div class="bawah">
+        <h2>Iklan</h2>
+        <div class="isi">
+          <!--Buat Iklan Google-->
+        </div>
+      </div>
+    </div>
+  </div>
 
-          function copyToClipboards() {
-            var copyText = document.getElementById("myInputs");
-            copyText.select();
-            copyText.setSelectionRange(0, 99999);
-            document.execCommand("copy");
-            alert("Copied the text: " + copyText.value);
-          }
-          </script>
-          
-    </body>
+  </section>
+
+  <script>
+    function copyToClipboard() {
+      var copyText = document.getElementById("myInput");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999);
+      document.execCommand("copy");
+      alert("Copied the text: " + copyText.value);
+    }
+
+    function copyToClipboards() {
+      var copyText = document.getElementById("myInputs");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999);
+      document.execCommand("copy");
+      alert("Copied the text: " + copyText.value);
+    }
+  </script>
+
+</body>
+
 </html>
