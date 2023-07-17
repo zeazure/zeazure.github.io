@@ -67,6 +67,8 @@ window.addEventListener("scroll", function() {
               isi[nilaislide - 1].style.display = "block";
               garis[nilaislide - 1].className += " active";
           }
+
+          setInterval(autoSlide, 3000);
   
   
   
