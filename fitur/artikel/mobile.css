@@ -453,7 +453,7 @@
 
   .developer {
     display: flex;
-    height: 20vh;
+    height: 15vh;
     margin-top: 5px;
     border-radius: 10px;
     transition: 0.5s ease;
@@ -471,14 +471,28 @@
   .developer .foto .gambar {
     display: flex;
     align-items: center;
-    width: 92%;
-    height: 73%;
+    justify-content: center;
+    width: 72%;
+    height: 83%;
     overflow: hidden;
+    color: #48C7E6;
     border-radius: 50%;
   }
 
   .developer .foto .gambar img {
     width: 100%;
+  }
+
+  .developer .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+  }
+
+  .developer .info p{
+    margin: 0;
+    font-size: 14px;
   }
 
   .footer {
