@@ -1,6 +1,6 @@
 @media (max-width: 1000px) {
   * {
-    font-family: 'Arial';
+    font-family: Roboto,sans-serif;
   }
 
   #alert {
@@ -46,30 +46,70 @@
     display: none;
   }
 
-  #rumah-isi,
+  #rumah-out,
   #semua-isi,
   #about-isi {
     display: none;
+  }
+
+  #rumah-isi{
+    display: flex;
+  }
+
+  #home{
+    color: #48C7E6;
+    font-weight: 700;
   }
 
   .container.rumah #rumah-isi {
     display: flex;
   }
 
+  .container.rumah #home{
+    color: #48C7E6;
+    font-weight: 700;
+  }
+
   .container.rumah #rumah-out {
     display: none;
   }
 
-  .container.semua #semua-isi {
+  .container.semua #semua-isi, .container.semua #rumah-out {
     display: flex;
+  }
+
+  .container.semua #rumah-isi{
+    display: none;
+  }
+
+  .container.semua #semua{
+    color: #48C7E6;
+    font-weight: 700;
   }
 
   .container.semua #semua-out {
     display: none;
   }
 
-  .container.tentang #about-isi {
+  .container.semua #home{
+    color: #bbb;
+  }
+
+  .container.tentang #about-isi, .container.tentang #rumah-out{
     display: flex;
+  }
+
+  .container.tentang #home{
+    color: #bbb;
+  }
+
+  .container.tentang #rumah-isi{
+    display: none;
+  }
+
+  .container.tentang #about{
+    color: #48C7E6;
+    font-weight: 700;
   }
 
   .container.tentang #about-out {
@@ -104,7 +144,7 @@
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     transition: 0.3s ease;
-    height: 9vh;
+    height: 70px;
   }
 
   .scrolled {
@@ -172,7 +212,7 @@
   }
 
   .isian .highlight {
-    height: 29vh;
+    height: 230px;
     margin-top: 5px;
     border-radius: 10px;
     transition: 0.5s ease;
@@ -182,7 +222,7 @@
   #highlight {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     height: 5vh;
   }
 
@@ -198,6 +238,7 @@
   .highlight .title {
     display: flex;
     align-items: flex-end;
+    margin-top: 3px;
     justify-content: center;
     height: 3vh;
   }
@@ -207,8 +248,8 @@
   }
 
   .highlight .slides {
-    height: 20vh;
-    width: 100%;
+    height: 170px;
+    width: 97%;
     display: flex;
     justify-content: center;
   }
@@ -217,7 +258,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 5%;
+    width: 8%;
   }
 
   .prev,
@@ -235,7 +276,7 @@
   }
 
   .highlight .items {
-    width: 65%;
+    width: 75%;
     border-radius: 5px;
     overflow: hidden;
   }
@@ -274,50 +315,32 @@
 
   .isian .tab {
     display: flex;
-    height: 4vh;
+    height: 55px;
     overflow: hidden;
-    margin-top: 5px;
+    margin-top: 3px;
+    color: #48C7E6;
     background-color: #ffffff;
-  }
-
-  .isian .tab .filter {
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    width: 22%;
-    overflow: hidden;
-    margin-left: 3px;
-    border-radius: 50px;
-    background-color: #fff;
-  }
-
-  .tab .filter select {
-    border: none;
-    font-size: 15px;
-    background-color: transparent;
-  }
-
-  .tab .filter select:focus {
-    border: none;
-    outline: none;
-    background-color: transparent;
   }
 
   .tab .menu {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 80%;
-    margin-left: 3px;
+    width: 100%;
   }
 
   .tab .menu .opsi {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    width: 30%;
-    height: 100%;
+    height: 80%;
+    justify-content: flex-end;
+  }
+
+  .tab .menu .opsi p{
+    color: #000;
+    font-size: 10px;
+    margin: 3px;
   }
 
   .isian a {
@@ -401,7 +424,7 @@
   .article .isi .deskripsi .tombol p {
     margin: 0;
     text-decoration: none;
-    font-size: 8.5px;
+    font-size: 9px;
   }
 
   .tab-menu {
@@ -478,12 +501,15 @@
   }
 
   .footer .isi .opsi {
+    color: #bbb;
     width: 15%;
   }
 
   .footer .isi .title {
     display: flex;
-    font-size: 12px;
+    font-size: 10px;
+    margin-top: 3px;
+    font-weight: 550;
     justify-content: center;
   }
 
