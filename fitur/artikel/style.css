@@ -3,7 +3,7 @@
     font-family: 'Arial';
   }
 
-  #alert {
+  #alert, .alert {
     display: none;
   }
 
