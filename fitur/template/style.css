@@ -483,7 +483,19 @@
   }  
 
   #kalkulator{
-    background-image: url(/asset/wallmorning.jpg);
+    background-image: url(/asset/project/kalkulator.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #slide{
+    background-image: url(/asset/project/slide.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #arduino{
+    background-image: url(/asset/project/arduino.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
