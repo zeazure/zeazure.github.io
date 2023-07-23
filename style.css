@@ -376,7 +376,7 @@ a {
     height: 7vh;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
 
     .pc {
         display: none;
@@ -722,7 +722,7 @@ a {
 
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
 
     .pc {
         display: flex;
