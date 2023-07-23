@@ -932,6 +932,33 @@
     height: 5%;
   }
 
+  
+/* Gaya untuk elemen Baca Juga */
+.baca-juga {
+  text-align: center; /* Untuk membuatnya berada di tengah */
+  margin-top: 40px;
+}
+
+.baca-juga h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.baca-juga ul {
+  list-style: none;
+  padding: 0;
+}
+
+.baca-juga li {
+  margin-bottom: 10px;
+}
+
+.baca-juga li a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
   .isian .artikel {
     display: flex;
     flex-direction: column;
