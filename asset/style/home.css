@@ -58,7 +58,7 @@ a {
 
     .header .logo img {
         margin-left: 15px;
-        width: 45px;
+        width: 43px;
         height: 43px;
     }
 
@@ -353,7 +353,7 @@ a {
         position: absolute;
         border-radius: 7px;
         width: 151px;
-        height: 65px;
+        height: 55px;
     }
 
     .mode .isi p {
@@ -628,8 +628,7 @@ a {
     }
 
     .header .logo .gambar img {
-        width: 55px;
-        height: 49.5px;
+        width: 52px;
         margin-left: 10px;
         flex-shrink: 0;
     }
@@ -806,8 +805,7 @@ a {
 
     .mode .gambar {
         width: 51px;
-        height: 43px;
-        margin-top: 1px;
+        height: 46px;
         left: 59px;
         position: absolute;
         border-radius: 7px
@@ -817,7 +815,7 @@ a {
         position: absolute;
         border-radius: 7px;
         width: 111px;
-        height: 45px;
+        height: 48px;
     }
 
     .mode .isi p {
@@ -825,7 +823,7 @@ a {
         position: absolute;
         align-items: center;
         margin-left: 10px;
-        font-size: 10px;
+        font-size: 12px;
         width: 50px;
         height: 100%;
     }
@@ -891,9 +889,9 @@ a {
         cursor: pointer;
         align-items: center;
         justify-content: center;
-        height: 30px;
+        height: 35px;
         margin: 5px 0 0 0;
-        font-size: 12px;
+        font-size: 14px;
         margin-top: 10px;
         border-radius: 50px;
         background: linear-gradient(to right, #dafcee, #e7f7f0, #dafcee);
