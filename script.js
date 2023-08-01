@@ -91,14 +91,14 @@ const dev = document.getElementById('color-development')
 var currentHour = today.getHours();
 if (currentHour >= 6 && currentHour < 18) { /* pagi hari */
     atas.style.backgroundImage = "url('/asset/wallmorning.jpg')";
-    bar.style.backgroundImage = "url('/asset/theme.png')"
+    //bar.style.backgroundImage = "url('/asset/theme.png')"
     pagi.style.display = "flex";
     malam.style.display = "none";
     intro.style.color = "#48C7E6";
     dev.style.color = "#48C7E6";
 } else { /* malam hari */
     atas.style.backgroundImage = "url('/asset/wallpaper.jpg')";
-    bar.style.backgroundImage = "url('/asset/theme_dark.png')"
+    //bar.style.backgroundImage = "url('/asset/theme_dark.png')"
     malam.style.display = "flex";
     pagi.style.display = "none";
     intro.style.color = "#000";

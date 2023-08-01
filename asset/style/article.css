@@ -1,0 +1,82 @@
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.isian .article {
+    height: auto;
+    transition: 0.7s ease;
+    border-radius: 12px;
+  }
+
+  .article .isi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .article .isi .gambar {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+  }
+
+  .article .isi .gambar img {
+    width: 300px;
+    filter: blur(2px);
+    height: 100%;
+  }
+
+  .article .isi .deskripsi {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 10px;
+    background-color: #fdfdfd;
+  }
+
+  .article .isi .deskripsi .title {
+    margin-left: 10px;
+    font-size: 11px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .article .isi .deskripsi .desk {
+    margin-left: 10px;
+    height: auto;
+    margin-top: 5px;
+    width: 95%;
+  }
+
+  .article .isi .deskripsi .desk p {
+    display: flex;
+    align-items: flex-start;
+    margin: 0px;
+    width: 90%;
+    font-size: 10px;
+  }
+
+  .article .isi .deskripsi .tombol {
+    margin-left: 10px;
+  }
+
+  .article .isi .deskripsi .tombol .button {
+    display: flex;
+    align-items: flex-end;
+    width: 90px;
+  }
+
+  .article .isi .deskripsi .tombol p {
+    margin: 0;
+    text-decoration: none;
+    font-size: 9px;
+  }

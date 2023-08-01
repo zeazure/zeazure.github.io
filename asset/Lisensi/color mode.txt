@@ -1,10 +1,12 @@
 81E5FE (Biru)
-48C7E6 (Toska)
+48C7E6 (Toska) utama
 303F9F (biru tua)
 65FF28 (Hijau)
 F4FF28 (Kuning)
 30D5C8 (aqua)
 979AFF (violet)
+
+text font : 16-17px
 
 cara kerja :
 Color Defalut Website
