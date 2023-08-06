@@ -1,0 +1,50 @@
+Tujuan Madd Store
+-Topup Game
+
+API function
+
+vip.reseller									= Body
+Trakteer									= Headers
+
+Prepaid (Pulsa)
+-Place an Order (https://vip-reseller.co.id/api/prepaid)			= Untuk beli pulsa
+-Cek status pesanan (https://vip-reseller.co.id/api/prepaid)			= pesanan pulsa
+-Mendapatkan Layanan (https://vip-reseller.co.id/api/prepaid)			= layanan pulsa
+
+Postpaid (PLN)
+
+Game & Streaming
+-Place an Order (https://vip-reseller.co.id/api/game-feature)			= Untuk topup game
+-Cek status pemesanan ( https://vip-reseller.co.id/api/game-feature)		= Cek pesanan game (Berhasil/dll)
+-Mendapatkan layanan (https://vip-reseller.co.id/api/game-feature)		= Layanan game, available, server, dll.
+-Mendapatkan nickname game ( https://vip-reseller.co.id/api/game-feature)	= Mendapatkan username game
+
+Alur Transaksi (SOP)
+1. Banyu mengisi deposit melalui vip-reseller (dengan Gopay biaya Fee 0.7%)
+2. User membeli item
+3. Data pembelian user dikirim ke wa user
+4. User membayar (dalam pembayaran ini dikenakan biaya admin 5% / fee 0.7% dengan Qris)
+5. Banyu mendapatkan notifikasi pembelian melalui WA
+6. Banyu melihat didashboardnya di trakteer klo user sudah lunas membayar (Jika belum Banyu bisa kontak melalui wa user yang sudah ada di WA)
+7. User menerima Konfirmasi pembayaran / kekurangan pembayaran melalui wa (dikirim otomatis oleh sistem)
+8. Banyu mengirim item menggunakan link yang sudah diberikan sistem
+9. user menerima konfirmasi pengiriman melalui wa (dikirim otomatis oleh sistem)
+
+Alur System
+1. Manual						= Halaman vip.reseller	
+2. UI/UX & Mendapatkan layanan				= API WA 	
+3. Mengirim data ke Banyu				= Halaman Admin		
+4. link to Trakteer					= Halaman Trakteer	
+5. Notifikasi pembelian 				= API WA		
+7. API WA for message					= Halaman WA		
+8. Place an order					= Halaman Admin		
+9. Manual / API WA for message / Cek status pemesanan	= Halaman WA		
+
+Mengenai Fee (biaya admin)
+-Dalam transaksi terkena Fee 1,4% (dari trakteer & vip-reseller) => jika dengan Qris
+-jika topup dengan bank (bebas biaya admin) jika dengan pulsa (Rp.8.000 - Rp.10.000) [Gak usah dibaca klo pake Qris]
+-Biaya Fee topup Gopay Rp.2.000 (jadi borongan aja depositnya)
+-Biaya Layanan Tristan-Web (Zeazure) => 25%-30% dari laba bersih selama sebulan
+
+Penghitungan Laba bersih selama sebulan
+- (Deposit/Modal + 1,4% (biaya admin) + Rp.2.000 (topup Gopay) + 25%-30% (Biaya Layanan Website & perawatan server)) - Laba kotor = Profit yang diterima Banyu
