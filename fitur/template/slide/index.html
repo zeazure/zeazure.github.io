@@ -22,9 +22,9 @@
 
   <!-- S:fb meta -->
   <meta property="og:type" content="article">
-  <meta property="og:title" content="template bahasa pemprograman gratis cara membuat kalkulator dengan html dan css">
+  <meta property="og:title" content="template bahasa pemprograman gratis cara membuat slide dengan html dan css">
   <meta property="og:description"
-    content="template bahasa pemprograman gratis cara membuat kalkulator dengan html dan css">
+    content="template bahasa pemprograman gratis cara membuat slide dengan html dan css">
   <meta property="og:url" content="https://zeazure.com/fitur/template/kalkulator">
   <meta property="og:site_name" content="zeazure.com">
   <!-- e:fb meta -->
@@ -36,7 +36,7 @@
   <meta name="twitter:title"
     content="&quot;Reshuffle&quot; template bahasa pemprograman gratis cara membuat kalkulator dengan html dan css">
   <meta name="twitter:description"
-    content="template bahasa pemprograman gratis cara membuat kalkulator dengan html dan css">
+    content="template bahasa pemprograman gratis cara membuat slide dengan html dan css">
   <!-- E:tweeter card -->
   <meta name="content_category" content="News">
   <meta name="content_subcategory" content="Nasional">
@@ -60,7 +60,7 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6127069686663543"
     crossorigin="anonymous"></script>
   <link rel="icon" href="/asset/favicon.ico" type="image/x-icon">
-  <title>Cara Membuat Kalkulator Dengan HTML</title>
+  <title>Cara Membuat Slide Dengan HTML, CSS, dan JS</title>
   <link rel="stylesheet" type="text/css" href="/asset/style/template.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
@@ -181,62 +181,73 @@
     <div class="isian">
       <div class="title">
         <div class="judul">
-          <h2>Cara Membuat Kalkulator Sederhana Dengan HTML dan CSS</h2>
+          <h2>Cara Membuat Slide Sederhana Dengan HTML, CSS, dan Javascript</h2>
         </div>
         <div class="id">
           <p class="penulis">Oleh : Tristan Ahnaf W.</p>
-          <p class="tanggal">30 Juli 2023</p>
+          <p class="tanggal">19 Agustus 2023</p>
         </div>
         <div class="line"></div>
       </div>
       <div class="isi">
-        <p>Kalkulator adalah alat menghitung yang sering kali kita gunakan dalam menyelesaikan tugas yang berhubungan
-          dengan menghitung atau mengolah angka. Tapi taukah teman-teman kita dapat membuat kalkulator sendiri dengan
-          menggunakan bahasa pemprograman.</p>
-        <p>Sebenarnya ada banyak cara untuk membuat sebuah kalkulator dengan Bahasa pemprograman, namun pada kesempatan
-          kali ini kita akan menggunakan HTML dan sedikit desain sederhana menggunakan CSS untuk membuat kalkulator.
-          Untuk project kali ini teman-teman juga tidak perlu menggunakan library atau extension dari luar, karena
-          semua element HTML yang kita gunakan akan menggunakan element dari HTML nya langsung.</p>
+        <p>Halo teman-teman, pada kesempatan kali ini kita akan membuat sebuah slide sederhana menggunakan bahasa
+          pemprograman HTML, CSS, dan Javascript. </p>
+        <p>Slide ini sendiri dapat teman-teman kembangkan atau teman-teman gunakan
+          sebagai slide presentasi, perkenalan diri, halaman website, preview halaman, dan lain-lain. Sehingga dapat
+          menjadi slide yang lebih baik lagi dan multifungsi.</p>
+        <p>Sebenarnya ada banyak cara untuk membuat sebuah slide dengan Bahasa pemprograman, namun pada kesempatan
+          kali ini kita akan menggunakan HTML, CSS, dan Javascript.</p>
+        <p>Untuk project kali ini teman-teman juga tidak perlu menggunakan library atau extension dari luar, karena
+          semua element yang kita gunakan akan menggunakan element dari HTML nya langsung.</p>
         <h3>HTML</h3>
-        <p>Yang pertama kita buat sebuah project HTML dengan diberinama ‘index.html’ Untuk aplikasi dan cara membuat
+        <p>Yang pertama kita buat sebuah project HTML dengan diberi nama ‘index.html’ Untuk aplikasi dan cara membuat
           file HTML sudah saya jelaskan di artikel berikut (<a href="">klik disini</a>). Selanjutnya teman-teman dapat
-          mengcopy teks html yang sudah saya buat dibawah ini ke dalam project teman-teman.</p>
+          mengcopy teks html dan Javascript yang sudah saya buat dibawah ini ke dalam project teman-teman.</p>
         <p id="myTextarea">Jika susah teman-teman dapat membaca petunjuk yang sudah saya tulis di dalam kotak untuk
           Langkah selanjutnya.</p>
         <textarea readonly name="" id="myInputs" cols="30" rows="10">
-              <DOCTYPE html>
-                <html>
-                  <head>
-                    <title>kalkulator</title>
-                    <link rel="stylesheet" type="txt/css" href="style.css">
-                  </head>
-                  <body> 
-                    <form class="kalkulator" name="calc">
-                      <input class="angka" type="text"class name="txt" style="font-size: 30px;">            
-                      <span class="num clear" onclick="document.calc.txt.value =''">C</span>
-                      <span class="num mode" onclick="document.calc.txt.value -='txt'">.</span>
-                      <span class="num mode" onclick="document.calc.txt.value /='100'">%</span>
-                      <span class="num mode" onclick="document.calc.txt.value +='/'">/</span>
-                      <span class="num" onclick="document.calc.txt.value +='7'">7</span>
-                      <span class="num" onclick="document.calc.txt.value +='8'">8</span>
-                      <span class="num" onclick="document.calc.txt.value +='9'">9</span>
-                      <span class="num mode" onclick="document.calc.txt.value +='*'">x</span>
-                      <span class="num" onclick="document.calc.txt.value +='4'">4</span>
-                      <span class="num" onclick="document.calc.txt.value +='5'">5</span>
-                      <span class="num" onclick="document.calc.txt.value +='6'">6</span>
-                      <span class="num mode" onclick="document.calc.txt.value ='-'">-</span>
-                      <span class="num" onclick="document.calc.txt.value +='1'">1</span>
-                      <span class="num" onclick="document.calc.txt.value +='2'">2</span>
-                      <span class="num" onclick="document.calc.txt.value +='3'">3</span>
-                      <span class="num mode" onclick="document.calc.txt.value +='+'">+</span>
-                      <span class="num" onclick="document.calc.txt.value +='0'">0</span>
-                      <span class="num" onclick="document.calc.txt.value +='00'">00</span>
-                      <span class="num" onclick="document.calc.txt.value +='000'">000</span>
-                      
-                      <span class="num hasil" onclick="document.calc.txt.value =eval(calc.txt.value)">=</span>
-                  </form>                                 
-                  </body>
-                </html>
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+              <meta charset="UTF-8">
+              <meta http-equiv="X-UA-Compatible" content="IE=edge">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <link rel="stylesheet" href="style.css"> <!--Sesuaikan dengan letak style css teman-teman-->
+              <title>Slide</title>
+          </head>
+          <body>
+              <div class="container"><!--Class pada 'div' ini boleh teman-teman ganti sesuai kebutuhan, namun jangan lupa ubah yang di CSS juga :D-->
+                  <div class="item">
+                      <div class="board">
+                          <div class="slide"><!--Kotak slide-->
+                              <div class="isian"><!--Teman-teman bisa mengubah isi dari Isian ini sesuai kebutuhan-->
+                                  <h2>Judul1</h2>
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fugiat placeat doloribus qui minus quisquam consequuntur ipsam laborum sequi pariatur maxime reprehenderit sed accusantium, itaque dolores maiores explicabo facere ut delectus! Eum laboriosam quod quae molestias. Voluptatibus, minima culpa nobis tempora rerum, beatae, quidem maxime ipsa voluptate consectetur quas aliquid.</p>
+                              </div>
+                              <div class="isian">
+                                  <h2>Judul2</h2>
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, assumenda? ipsum dolor sit amet consectetur adipisicing elit. Earum fugiat placeat doloribus qui minus quisquam consequuntur ipsam laborum sequi pariatur maxime reprehenderit sed accusantium, itaque dolores maiores explicabo facere ut delectus! Eum laboriosam quod quae molestias. Voluptatibus, minima culpa nobis tempora rerum, beatae, quidem maxime ipsa voluptate consectetur quas aliquid.</p>
+                              </div>
+                              <div class="isian">
+                                  <h2>Judul3</h2>
+                                  <p>Lorem ipsum dolor sit amet. ipsum dolor sit amet consectetur adipisicing elit. Earum fugiat placeat doloribus qui minus quisquam consequuntur ipsam laborum sequi pariatur maxime reprehenderit sed accusantium, itaque dolores maiores explicabo facere ut delectus! Eum laboriosam quod quae molestias. Voluptatibus, minima culpa nobis tempora rerum, beatae, quidem maxime ipsa voluptate consectetur quas aliquid.</p>
+                              </div>
+                          </div>
+                          <div class="tombol"> <!--Bagian tombol bawah-->
+                              <a class="prev" onclick="nextslide(-1)">&#10094;</a>
+                              <div class="page">
+                                  <span class="line" onclick="dotslide(1)"></span>
+                                  <span class="line" onclick="dotslide(2)"></span>
+                                  <span class="line" onclick="dotslide(3)"></span>
+                              </div>
+                              <a class="next" onclick="nextslide(1)">&#10095;</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!--Untuk Element Javascript-->
+          </body>
+          </html>
             </textarea>
         <button onclick="copyToClipboards()" style="cursor: pointer;">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard"
@@ -248,77 +259,216 @@
           </svg>
         </button>
         <h3>CSS</h3>
-        <p>Selanjutnya kita tambahkan style CSS agar kalkulator yang sudah kita buat tadi menjadi lebih menarik.</p>
+        <p>Selanjutnya kita tambahkan style CSS agar slide yang sudah kita buat tadi menjadi lebih menarik.</p>
         <p>Caranya teman-teman dapat mengcopy style CSS yang sudah saya siapkan dibawah ini ke halaman HTML yang sudah
           kalian buat. Untuk bagaimana cara membuat file CSS teman-teman dapat membaca artikel saya yang ini <a
             href="">(klik disini)</a>.</p>
         <textarea readonly name="" id="myInput" cols="30" rows="10">
-              *{
-                margin: 0;
-                padding: 0;
-                font-family: 'comic sans ms';
-                box-sizing: border-box;
+          *{
+            font-family: 'arial';
+        }
+        
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        
+        .container{ /*Mengatur background*/
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+            background-image: url("isi dengan link foto kamu");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .container .item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 620px;
+        }
+        
+        @media (max-width: 900px){ /*pengaturan responsive device*/
+            .item .board{ /*Mengatur ukuran dan warna slide*/
+                width: 90%;
+                height: 75%;
+                border-radius: 20px;
+                background-color: rgba(00, 00, 00, 0.2);
             }
-            
-            body {
+        
+            .tombol{ /*pengaturan posisi tombol*/
                 display: flex;
-                justify-content: center;
+                justify-content: space-evenly;
                 align-items: center;
-                min-height: 100vh;
-                background: white;
+                margin-top: 15%;
+                width: 100%;
             }
+        }
+        
+        @media (min-width: 900px){
+            .item .board{ /*Mengatur ukuran dan warna slide*/
+                width: 65%;
+                height: 65%;
+                border-radius: 20px;
+                background-color: rgba(00, 00, 00, 0.2);
+            }
+        
+            .tombol{ /*pengaturan posisi tombol*/
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-top: 10%;
+                width: 100%;
+            }
+        }
+        
+        /*pengaturan isi slidenya*/
+        
+        .slide{
+            display: flex;
+            justify-content: center;
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            height: 90%;
+        }
+        
+        .isian{
+            display: none;
+            color: #fff;
+            z-index: 2;
+            width: 90%;
+        }
+        
+        .isian h2, .isian p{
+            display: flex;
+            justify-content: center;
+        }
+        
+        .img{
+            vertical-align: middle;
+            width: 100%;
+            height: 400px;
+        }
+        
+        /*pengaturan tombol dibawah slide*/
+        
+        .next,
+        .prev{
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+            transition: 2s ease;
+            border-radius: 0 3px 3px 0;
+            height: 100%;
+        }
+        
+        .next{
+            left: 0;
+            border-radius: 3px;
+        }
+        
+        .next:hover,
+        .prev:hover{
+            color: #bbb;
+        }
+        
+        .page{
+            display: flex;
+            justify-content: center;
+            height: 100%;
+        }
+        
+        .page .line{
+            cursor: pointer;
+            height: 5px;
+            width: 25px;
+            margin: 0 2px;
+            background-color: #fff;
+            display: inline-block;
+            transition: 0.5s ease;
+            border-radius: 50px;
+        }
+        
+        .page .active,
+        .page .line:hover{
+            background-color: #bbb;
+        }        
+            </textarea>
+        <button onclick="copyToClipboard()" style="cursor: pointer;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard"
+            viewBox="0 0 16 16">
+            <path
+              d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+            <path
+              d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+          </svg>
+        </button>
+        <h3>Javascript</h3>
+        <p>Selanjutnya kita tambahkan Javascript agar Slide yang sudah kita buat tadi medapat berfungsi.</p>
+        <p>Caranya teman-teman dapat mengcopy Javascript yang sudah saya siapkan dibawah ini ke halaman HTML pada bagian yang sudah ditandai yang sudah
+          kalian buat. Untuk bagaimana cara membuat file JS teman-teman dapat membaca artikel saya yang ini <a
+            href="">(klik disini)</a>.</p>
+        <textarea readonly name="" id="myInput" cols="30" rows="10">
+          <script>
+            var indexValue = 0;
+            //memberikan fungsi dan nilai pada variabel x
+            //serta mengatur kotak slide
+            function layar(){
+                var x;
+                const gambar = document.getElementsByClassName("isian");
+    
+                for(x = 0; x < gambar.length; x++){
+                    gambar[x].style.display = "none";
+                }
+    
+                indexValue++;
+                if(indexValue > gambar.length){indexValue = 1}
+                gambar[indexValue -1].style.display = "block";
+            }
+            layar();
+    
+            var nilaislide = 1;
+            tampilan(nilaislide);
+            function nextslide(n){
+                tampilan(nilaislide += n);
+            }
+    
+            function dotslide(n){
+                tampilan(nilaislide = n);
+            }
+    
+            function tampilan(n){
+                //menambah memberi fungsi pada variabel 'y'
+                //memberikan fungsi pada tombol
+                var y; //Variabel dapat teman-teman ubah sesuai kebutuhan, namun perlu diingat teman-teman harus mengubah semua command yang terkait varibel tersebut
+                var isi = document.getElementsByClassName("isian");
+                var garis = document.getElementsByClassName("line");
+    
+                if(n > isi.length){
+                    nilaislide = 1;
+                }
+    
+                if(n < 1){
+                    nilaislide = isi.length;
+                }
+    
+                for(y = 0; y < isi.length; y++){
+                    isi[y].style.display = "none";
+                }
+    
+                for(y=0; y < isi.length; y++){
+                    garis[y].className = garis[y].className.replace(" active","")
+                }
+    
+                isi[nilaislide - 1].style.display = "block";
+                garis[nilaislide - 1].className += " active";
+            }
+    
             
-            .kalkulator {
-                cursor: pointer;
-                background: #fff;
-                position: relative;
-                display: grid;
-                border: 5px solid #111;
-                border-radius: 15px;
-            }
-            
-            .kalkulator .angka {
-                grid-column: span 4;
-                height: 80px;
-                width: 220px;
-                text-align: right;
-                border: 0;
-                outline: 0;
-                padding: 0;
-                font-size: 10px;
-            }
-            
-            input {
-                border-radius: 15px;
-            }
-            
-            .kalkulator span {
-                display: grid;
-                width: 60px;
-                height: 60px;
-                color: #111;
-                background: 80c2835;
-                place-items: center;
-                border: 1.5px solid rgba(0, 0, 0, .1);
-            }
-            
-            .kalkulator span:active {
-                background: transparent;
-                color: #111;
-            }
-            
-            .kalkulator span.clear {
-                background: gray;
-            }
-            
-            .kalkulator span.hasil {
-                background: gray;
-                border-bottom-right-radius: 10px;
-            }
-            
-            .kalkulator span.mode {
-                background: gray;
-            }
+        </script>
             </textarea>
         <button onclick="copyToClipboard()" style="cursor: pointer;">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard"
@@ -332,30 +482,7 @@
         <h3>HASIL</h3>
         <p>Gimana? mudahkan, Selamat mencoba!</p>
         <h3>Preview</h3>
-        <form class="kalkulator" name="calc">
-          <input class="angka" type="text" class name="txt" style="font-size: 30px;">
-          <span class="num clear" onclick="document.calc.txt.value =''">C</span>
-          <span class="num mode" onclick="document.calc.txt.value -='txt'">.</span>
-          <span class="num mode" onclick="document.calc.txt.value /='100'">%</span>
-          <span class="num mode" onclick="document.calc.txt.value +='/'">/</span>
-          <span class="num" onclick="document.calc.txt.value +='7'">7</span>
-          <span class="num" onclick="document.calc.txt.value +='8'">8</span>
-          <span class="num" onclick="document.calc.txt.value +='9'">9</span>
-          <span class="num mode" onclick="document.calc.txt.value +='*'">x</span>
-          <span class="num" onclick="document.calc.txt.value +='4'">4</span>
-          <span class="num" onclick="document.calc.txt.value +='5'">5</span>
-          <span class="num" onclick="document.calc.txt.value +='6'">6</span>
-          <span class="num mode" onclick="document.calc.txt.value ='-'">-</span>
-          <span class="num" onclick="document.calc.txt.value +='1'">1</span>
-          <span class="num" onclick="document.calc.txt.value +='2'">2</span>
-          <span class="num" onclick="document.calc.txt.value +='3'">3</span>
-          <span class="num mode" onclick="document.calc.txt.value +='+'">+</span>
-          <span class="num" onclick="document.calc.txt.value +='0'">0</span>
-          <span class="num" onclick="document.calc.txt.value +='00'">00</span>
-          <span class="num" onclick="document.calc.txt.value +='000'">000</span>
-
-          <span class="num hasil" onclick="document.calc.txt.value =eval(calc.txt.value)">=</span>
-        </form>
+       <p>Untuk Previewnya teman-teman dapat lihat <a href="https://instagram.com/@tristanaw_">disini</a></p>
       </div>
     </div>
     <div class="samping">
@@ -368,10 +495,10 @@
       <div class="tengah">
         <h2>Informasi Halaman</h2>
         <div class="ket">
-          <p>"Cara Membuat Kalkulator"</p>
-          <p>Dalam template ini kalian hanya akan menggunakan 2 bahasa pemprograman yaitu HTML dan CSS. Kalian tidak
+          <p>"Cara Membuat Slide"</p>
+          <p>Dalam template ini kalian akan menggunakan 3 bahasa pemprograman yaitu HTML, CSS dan Javascript. Kalian tidak
             perlu menambahkan extension lain dari luar karena hanya menggunakan element bawaan dari HTML. Teman-teman
-            juga dapa mengubah desain dari kalkulatornya sesuai kebutuhan teman-teman</p>
+            juga dapa mengubah desain dari slide sesuai kebutuhan teman-teman</p>
         </div>
       </div>
       <div class="bawah">
