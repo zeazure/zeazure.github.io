@@ -28,6 +28,13 @@
         width: 100%;
         background-color: #fff;
         height: auto;
+        transition: 0.5s ease;
+    }
+
+    #container.color{
+        background-color: #818cab;
+        color: #fff;
+        transition: 0.5s ease;
     }
 
     .header {
@@ -56,7 +63,7 @@
 
     #container.color .header {
         color: #fff;
-        background: linear-gradient(to right, #e9fdf5, #cefaff, #d6f3f7, #dafcee);
+        background: #707070;
         transition: 0.5s ease;
     }
 
