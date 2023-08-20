@@ -410,7 +410,7 @@
         <p>Selanjutnya kita tambahkan Javascript agar Slide yang sudah kita buat tadi dapat berfungsi.</p>
         <p>Caranya teman-teman dapat mengcopy Javascript yang sudah saya siapkan dibawah ini ke halaman HTML pada bagian yang sudah ditandai. Untuk bagaimana cara membuat file JS teman-teman dapat membaca artikel saya yang ini <a
             href="">(klik disini)</a>.</p>
-        <textarea readonly name="" id="myInput" cols="30" rows="10">
+        <textarea readonly name="" id="myInputss" cols="30" rows="10">
           <script>
             var indexValue = 0;
             //memberikan fungsi dan nilai pada variabel x
@@ -469,7 +469,7 @@
             
         </script>
             </textarea>
-        <button onclick="copyToClipboard()" style="cursor: pointer;">
+        <button onclick="copyToClipboardss()" style="cursor: pointer;">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard"
             viewBox="0 0 16 16">
             <path
@@ -560,7 +560,7 @@
       copyText.select();
       copyText.setSelectionRange(0, 99999);
       document.execCommand("copy");
-      alert("Copied the text: " + copyText.value);
+      alert("Teks Berhasil dicopy");
     }
 
     function copyToClipboards() {
@@ -568,10 +568,18 @@
       copyText.select();
       copyText.setSelectionRange(0, 99999);
       document.execCommand("copy");
-      alert("Copied the text: " + copyText.value);
+      alert("Teks Berhasil dicopy");
+    }
+    function copyToClipboardss() {
+      var copyText = document.getElementById("myInputss");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999);
+      document.execCommand("copy");
+      alert("Teks Berhasil dicopy");
     }
   </script>
 
 </body>
 
 </html>
+
