@@ -1,0 +1,105 @@
+MBLI3-S4
+MBLM14-S3
+MBLM28-S3
+MBLM42-S3
+MBLM56-S3
+MBLM70-S3
+MBLB86-S3
+MBLPWP1-S3
+MBLM112-S3
+MBLM140-S3
+MBLB172-S3
+MBLB257-S3
+MBLM284-S3
+MBLI300-S4
+MBLB344-S3
+MBLM355-S3
+MBLB429-S3
+MBLB514-S3
+MBLMTP-S3
+MBLB600-S3
+MBLB706-S3
+MBLM716-S3
+MBLB878-S3
+MBLB963-S3
+MBLB1050-S3
+
+MBLI3S4		kk		
+MBLM14S3 	kk
+MBLM28S3	kk
+MBLM42S3	kk
+MBLM56S3	kk
+MBLM70S3	kk
+MBLB86S3	kk
+MBLPWP1S3	kk
+MBLM112S3	k
+MBLM140S3	k
+MBLB172S3	k
+MBLB257S3	k
+MBLM284S3	k
+MBLI300S4	k
+MBLB344S3	k
+MBLM355S3	k
+MBLB429S3	k
+MBLB514S3	k
+MBLMTPS3	k
+MBLB600S3	k
+MBLB706S3	k
+MBLM716S3	k
+MBLB878S3	k
+MBLB963S3	k
+MBLB1050S3	k
+
+3 Diamonds (3 + 0 Bonus)	k
+14 Diamonds (13 + 1 Bonus)	k
+28 Diamonds (26 + 2 Bonus)	k
+42 Diamonds (38 + 4 Bonus)	k
+56 Diamonds (51 + 5 Bonus)	k
+70 Diamonds (64 + 6 Bonus)	k
+86 Diamonds (78 + 8 Bonus)	k
+Weekly Diamond Pass 1X		k
+112 Diamonds (102 + 10 Bonus)
+140 Diamonds (128 + 13 Bonus)
+172 Diamonds (156 + 16 Bonus)
+257 Diamonds (234 + 23 Bonus)
+284 Diamonds (254 + 30 Bonus)
+300 Diamonds (270 + 30 Bonus)
+344 Diamonds (312 + 32 Bonus)
+355 Diamonds (317 + 38 Bonus)
+429 Diamonds (390 + 39 Bonus)
+514 Diamonds (468 + 46 Bonus)
+Twilight Pass
+600 Diamonds (546 + 54 Bonus)
+706 Diamonds (625 + 81 Bonus)
+716 Diamonds (633 + 83 Bonus)
+878 Diamonds (781 + 97 Bonus)
+963 Diamonds (859 + 104 Bonus)
+1050 Diamonds (937 +113 Bonus)
+
+
+Rp2.000		k
+Rp4.000		k
+Rp7.000 	k
+Rp11.000	k
+Rp13.500	k
+Rp17.000	k
+Rp20.000	k
+Rp24.000	k
+Rp27.000
+Rp35.000
+Rp40.000
+Rp59.000
+Rp66.000
+Rp68.500
+Rp79.000
+Rp83.000
+Rp99.000
+Rp118.000
+Rp132.000
+Rp138.000
+Rp157.500
+Rp165.000
+Rp197.000
+Rp217.000
+Rp237.000
+
